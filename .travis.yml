@@ -1,3 +1,5 @@
 language: ruby
 rvm:
   - 2.3.0
+notifications:
+  slack: trinity-health-system:vq1qRKvbZpGI09z86I3PBnaf
