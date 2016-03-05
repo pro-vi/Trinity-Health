@@ -21,8 +21,4 @@ Background: Cases by Clinician
     And I follow "Save"
     Then I should be on the show page for patient "King Kong"
     
-Scenario: 
-    When I go to the home page for "Dr. Dre"
-    Then I should see "Sally Mae"
-    Then I should see "Freddie Mac"
     
