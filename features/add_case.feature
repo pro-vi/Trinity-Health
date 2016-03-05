@@ -1,4 +1,4 @@
-Feature: 
+Feature: add a case to the list
   
   As a collaborating physician
   I want to create patient cases
