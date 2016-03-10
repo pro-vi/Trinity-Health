@@ -1,0 +1,8 @@
+<h1>Cases</h1>
+<div>
+  <% @cases.each do |c| %>
+    <h5><%= link_to c.name, case_path(c) %></h5>
+  <% end %>
+</div>
+
+<%= link_to "Create new case", new_case_path %>
