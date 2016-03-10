@@ -7,13 +7,13 @@ Feature: display a list of all cases
 Background: Cases by Clinician
 
   Given the following cases exist:
-  | Patient Name        | Age     | Gender  |   Diagnosis     |
+  | name                | age     | gender  |   diagnosis     |
   | Sally Mae           | 102     | F       |   Breast Cancer |
   | Freddie Mac         | 99      | M       |   Lung Cancer   |
   | Kanye West          | 8       | M       |       Flu       |
   | Somebody Else       | 50      | M       |     Diabetes    |
     
 Scenario: 
-    When I go to the home page for "Dr. Dre"
+    When I go to the home page
     Then I should see "Sally Mae"
     Then I should see "Freddie Mac"

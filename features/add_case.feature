@@ -6,8 +6,10 @@ Feature: add a case to the list
   
 Scenario: add case
   When I go to the home page
-  And I follow "Add Case"
-  Then I should be on the "Add Case" page
-  And I enter a patient name of "King Kong" and diagnosis of "Common Cold"
-  And I follow "Save"
-  Then I should be on the show page for patient "King Kong"
+  And I follow "Create new case"
+  Then I should be on the new_case page
+  And I fill in "Name" with "King Kong"
+  And I fill in "Diagnosis" with "Common Cold"
+  And I press "submit"
+  Then I should see "King Kong"
+  And I should see "Common Cold"
