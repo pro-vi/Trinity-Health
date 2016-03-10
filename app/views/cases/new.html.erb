@@ -1,0 +1,16 @@
+<h1>Create a new case</h1>
+<%= form_for @case do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %></br>
+  
+  <%= f.label :age %>
+  <%= f.text_field :age %></br>
+  
+  <%= f.label :gender %>
+  <%= f.select :gender, [ 'Male', 'Female' ] %></br>
+  
+  <%= f.submit %>
+  
+<% end %>
+
+<%= link_to "Back to case list", cases_path %>
