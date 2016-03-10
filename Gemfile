@@ -4,8 +4,6 @@ ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,6 +37,8 @@ group :development, :test do
   # debugger is useful in development mode too
   #gem 'debugger'
   gem 'jasmine-rails' # if you plan to use JavaScript/CoffeeScript
+  #sqlite for developing and testing
+  gem 'sqlite3'
 end
 # setup Cucumber, RSpec, autotest support
 group :test do
