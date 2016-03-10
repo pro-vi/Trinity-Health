@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160310033335) do
     t.integer  "age"
     t.string   "gender"
     t.string   "diagnosis"
-    t.string   "disease_characteristic"
+    t.string   "disease_characteristics"
     t.string   "treatment_history"
     t.string   "past_medical_history"
     t.datetime "created_at",             null: false

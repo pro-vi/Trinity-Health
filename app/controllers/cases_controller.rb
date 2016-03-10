@@ -1,7 +1,7 @@
 class CasesController < ApplicationController
     
     def case_params
-        params.require(:case).permit(:name, :diagnosis)
+        params.require(:case, :name, :diagnosis).permit(:age, :gender, :disease_characteristics, :treatment_history, :past_medical_history)
     end
     
     def show
