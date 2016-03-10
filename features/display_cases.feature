@@ -13,7 +13,12 @@ Background: Cases by Clinician
   | Kanye West          | 8       | M       |       Flu       |
   | Somebody Else       | 50      | M       |     Diabetes    |
     
-Scenario: 
+Scenario: View cases
     When I go to the home page
     Then I should see "Sally Mae"
-    Then I should see "Freddie Mac"
+    And I should see "Freddie Mac"
+
+Scenario: Verify cases exist
+    Given I am on the home page
+    And I follow "Sally Mae"
+    Then I should see "Breast Cancer"
