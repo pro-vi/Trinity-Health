@@ -51,6 +51,7 @@ group :test do
   gem 'factory_girl_rails' # if using FactoryGirl
   gem 'metric_fu'        # collect code metrics
   gem 'test-unit' # to get rspec working
+  gem "codeclimate-test-reporter" #coverage
 end
 
 group :development do
