@@ -1,5 +1,8 @@
 language: ruby
 rvm:
   - 2.3.0
+before_script:
+  - "rake db:migrate RAILS_ENV=test"
 notifications:
   slack: trinity-health-system:vq1qRKvbZpGI09z86I3PBnaf
+  
