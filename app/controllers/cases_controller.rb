@@ -1,6 +1,10 @@
 class CasesController < ApplicationController
   before_action :set_case, only: [:edit, :update, :show, :destroy]
   
+  def case_params    
+    params.require(:case, :name, :diagnosis).permit(:age, :gender, 
+      :disease_characteristic, :treatment_history, :past_medical_history)
+  end
   
   def index
     @cases = Case.all
@@ -33,21 +37,13 @@ class CasesController < ApplicationController
   end
   
   def show
+    @case = Case.find(params[:id])
   end
   
   def destroy
     @case.destroy
     flash[:danger] = "Case was successfully deleted"
     redirect_to cases_path
-  end
-  
-  private
-  def set_case
-    @case = Case.find(params[:id])
-  end
-  def case_params    
-    params.require(:case).permit(:name, :diagnosis, :age, :gender, 
-      :disease_characteristic, :treatment_history, :past_medical_history)
   end
 
 end
