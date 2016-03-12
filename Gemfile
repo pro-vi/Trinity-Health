@@ -42,7 +42,6 @@ group :development, :test do
 end
 # setup Cucumber, RSpec, autotest support
 group :test do
-  gem 'rspec'
   gem 'rspec-rails'
   gem 'simplecov', :require => false
   gem 'cucumber-rails', :require => false
