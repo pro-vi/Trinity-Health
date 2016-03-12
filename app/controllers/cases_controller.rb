@@ -1,8 +1,7 @@
 class CasesController < ApplicationController
-  before_action :set_case, only: [:edit, :update, :show, :destroy]
   
   def case_params    
-    params.require(:case, :name, :diagnosis).permit(:age, :gender, 
+    params.require(:case).permit(:name, :diagnosis, :age, :gender, 
       :disease_characteristic, :treatment_history, :past_medical_history)
   end
   
