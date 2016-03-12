@@ -4,7 +4,9 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_filter "/features/"
+end
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 

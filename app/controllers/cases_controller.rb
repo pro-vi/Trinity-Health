@@ -27,12 +27,6 @@ class CasesController < ApplicationController
   end
   
   def update
-    if @case.update(case_params)
-      flash[:success] = "Case was successfully updated"
-      redirect_to case_path(@case)
-    else
-      render :edit
-    end
   end
   
   def show
@@ -40,9 +34,6 @@ class CasesController < ApplicationController
   end
   
   def destroy
-    @case.destroy
-    flash[:danger] = "Case was successfully deleted"
-    redirect_to cases_path
   end
 
 end
