@@ -4,6 +4,7 @@ rvm:
 before_script:
   - "bundle exec rake db:migrate RAILS_ENV=test"
 notifications:
+  email: false
   slack: trinity-health-system:vq1qRKvbZpGI09z86I3PBnaf
 addons:
   code_climate:
