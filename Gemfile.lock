@@ -245,6 +245,10 @@ GEM
       netrc (~> 0.7)
     roodi (3.3.1)
       ruby_parser (~> 3.2, >= 3.2.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
     rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
@@ -339,6 +343,7 @@ DEPENDENCIES
   metric_fu
   pg
   rails
+  rspec
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
