@@ -1,0 +1,692 @@
+---
+:churn:
+  :changes: []
+  :class_churn: []
+  :method_churn: []
+  :changed_files:
+  - coverage/.last_run.json
+  - coverage/.resultset.json
+  - coverage/assets/0.10.0/application.css
+  - coverage/assets/0.10.0/application.js
+  - coverage/index.html
+  :changed_classes: []
+  :changed_methods: []
+:saikuro:
+  :files:
+  - :classes:
+    - :class_name: CasesController
+      :complexity: 11
+      :lines: 52
+      :methods:
+      - :name: CasesController#update
+        :complexity: 2
+        :lines: 7
+      - :name: CasesController#create
+        :complexity: 2
+        :lines: 8
+      - :name: CasesController#case_params
+        :complexity: 1
+        :lines: 3
+      - :name: CasesController#set_case
+        :complexity: 1
+        :lines: 2
+      - :name: CasesController#destroy
+        :complexity: 1
+        :lines: 4
+      - :name: CasesController#show
+        :complexity: 1
+        :lines: 1
+      - :name: CasesController#edit
+        :complexity: 1
+        :lines: 1
+      - :name: CasesController#new
+        :complexity: 1
+        :lines: 2
+      - :name: CasesController#index
+        :complexity: 1
+        :lines: 2
+    :filename: app/controllers/cases_controller.rb
+  - :classes:
+    - :class_name: CasesHelper
+      :complexity: 0
+      :lines: 1
+      :methods: []
+    :filename: app/helpers/cases_helper.rb
+  - :classes:
+    - :class_name: ApplicationHelper
+      :complexity: 0
+      :lines: 1
+      :methods: []
+    :filename: app/helpers/application_helper.rb
+  - :classes:
+    - :class_name: Case
+      :complexity: 0
+      :lines: 1
+      :methods: []
+    :filename: app/models/case.rb
+  - :classes:
+    - :class_name: ''
+      :complexity: 0
+      :lines: 4
+      :methods: []
+    :filename: app/views/cases/new.html.erb
+  - :classes:
+    - :class_name: ApplicationController
+      :complexity: 0
+      :lines: 4
+      :methods: []
+    :filename: app/controllers/application_controller.rb
+  :classes:
+  - :name: CasesController
+    :complexity: 11
+    :lines: 52
+    :defs:
+    - :name: CasesController#index
+      :complexity: 1
+      :lines: 2
+    - :name: CasesController#new
+      :complexity: 1
+      :lines: 2
+    - :name: CasesController#edit
+      :complexity: 1
+      :lines: 1
+    - :name: CasesController#create
+      :complexity: 2
+      :lines: 8
+    - :name: CasesController#update
+      :complexity: 2
+      :lines: 7
+    - :name: CasesController#show
+      :complexity: 1
+      :lines: 1
+    - :name: CasesController#destroy
+      :complexity: 1
+      :lines: 4
+    - :name: CasesController#set_case
+      :complexity: 1
+      :lines: 2
+    - :name: CasesController#case_params
+      :complexity: 1
+      :lines: 3
+  - :name: ApplicationController
+    :complexity: 0
+    :lines: 4
+  - :name: ''
+    :complexity: 0
+    :lines: 4
+  - :name: Case
+    :complexity: 0
+    :lines: 1
+  - :name: ApplicationHelper
+    :complexity: 0
+    :lines: 1
+  - :name: CasesHelper
+    :complexity: 0
+    :lines: 1
+  :methods:
+  - :name: CasesController#update
+    :complexity: 2
+    :lines: 7
+  - :name: CasesController#create
+    :complexity: 2
+    :lines: 8
+  - :name: CasesController#case_params
+    :complexity: 1
+    :lines: 3
+  - :name: CasesController#set_case
+    :complexity: 1
+    :lines: 2
+  - :name: CasesController#destroy
+    :complexity: 1
+    :lines: 4
+  - :name: CasesController#show
+    :complexity: 1
+    :lines: 1
+  - :name: CasesController#edit
+    :complexity: 1
+    :lines: 1
+  - :name: CasesController#new
+    :complexity: 1
+    :lines: 2
+  - :name: CasesController#index
+    :complexity: 1
+    :lines: 2
+:roodi:
+  :total:
+  - Found 0 errors.
+  :problems: []
+:stats:
+  :codeLOC: 52
+  :testLOC: 6
+  :code_to_test_ratio: 0.1
+  :lines:
+  - :name: Controllers
+    :lines: 58
+    :loc: 46
+    :classes: 2
+    :methods: 9
+    :methods_per_class: 4
+    :loc_per_method: 3
+  - :name: Helpers
+    :lines: 4
+    :loc: 4
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Models
+    :lines: 2
+    :loc: 2
+    :classes: 1
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Mailers
+    :lines: 0
+    :loc: 0
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Javascripts
+    :lines: 17
+    :loc: 0
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Libraries
+    :lines: 0
+    :loc: 0
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Controllers specs
+    :lines: 5
+    :loc: 3
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Models specs
+    :lines: 5
+    :loc: 3
+    :classes: 0
+    :methods: 0
+    :methods_per_class: 0
+    :loc_per_method: 0
+  - :name: Total
+    :lines: 91
+    :loc: 58
+    :classes: 3
+    :methods: 9
+    :methods_per_class: 3
+    :loc_per_method: 4
+:flay:
+  :total_score: '0'
+  :matches: []
+:cane:
+  :total_violations: 14
+  :violations:
+    :line_style:
+    - :line: app/controllers/cases_controller.rb:3
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:4
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:8
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:12
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:15
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:25
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:34
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:37
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:43
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:48
+      :description: Line contains trailing whitespace
+    - :line: app/controllers/cases_controller.rb:49
+      :description: Line contains trailing whitespace
+    - :line: spec/controllers/cases_controller_spec.rb:4
+      :description: Line contains trailing whitespace
+    - :line: spec/models/cases_spec.rb:4
+      :description: Line contains trailing whitespace
+    :comment:
+    - :line: app/controllers/cases_controller.rb:1
+      :class_name: CasesController
+:reek:
+  :matches:
+  - :file_path: app/controllers/application_controller.rb
+    :code_smells:
+    - :method: ApplicationController
+      :message: has no descriptive comment
+      :type: IrresponsibleModule
+      :lines:
+      - 1
+  - :file_path: app/models/case.rb
+    :code_smells:
+    - :method: Case
+      :message: has no descriptive comment
+      :type: IrresponsibleModule
+      :lines:
+      - 1
+  - :file_path: app/controllers/cases_controller.rb
+    :code_smells:
+    - :method: CasesController
+      :message: has no descriptive comment
+      :type: IrresponsibleModule
+      :lines:
+      - 1
+:flog:
+  :total: 112.59316507592743
+  :average: 11.259316507592743
+  :method_containers:
+  - :name: main
+    :path: ''
+    :total_score: 79.38841225267078
+    :highest_score: 79.38841225267078
+    :average_score: 79.38841225267078
+    :methods:
+      main#none:
+        :operators:
+          :branch: 27.00000000000001
+          :any?: 1.0
+          :assignment: 17.400000000000006
+          :root: 1.6
+          :[]: 1.4000000000000001
+          :first: 1.2000000000000002
+          :nil?: 1.2000000000000002
+          :dirname: 1.7000000000000002
+          :+: 1.5000000000000002
+          :unshift: 1.3000000000000003
+          :require: 3.200000000000001
+          :namespace: 1.4000000000000004
+          :new: 4.800000000000002
+          :desc: 4.3000000000000025
+          :task: 14.500000000000005
+          :exist?: 3.600000000000002
+          :<<: 5.800000000000003
+          :application: 1.900000000000001
+          :configure: 1.700000000000001
+          :config: 7.000000000000005
+          :respond_to?: 1.8000000000000014
+          :annotations: 4.600000000000003
+          :directories: 2.2000000000000015
+          :register_extensions: 2.0000000000000013
+          :puts: 1.5000000000000009
+          :abort: 1.4000000000000008
+        :score: 79.38841225267078
+        :path: 
+  - :name: CasesController
+    :path: app/controllers/cases_controller.rb
+    :total_score: 32.204752823256655
+    :highest_score: 8.452810183601667
+    :average_score: 4.025594102907082
+    :methods:
+      CasesController#create:
+        :operators:
+          :assignment: 2.2
+          :case_params: 1.2
+          :new: 1.0
+          :branch: 1.0
+          :save: 1.0
+          :flash: 1.2000000000000002
+          :case_path: 1.4000000000000001
+          :redirect_to: 1.2000000000000002
+          :render: 1.1
+        :score: 8.452810183601667
+        :path: app/controllers/cases_controller.rb:16
+      CasesController#update:
+        :operators:
+          :branch: 1.0
+          :case_params: 1.2
+          :update: 1.0
+          :assignment: 1.2000000000000002
+          :flash: 1.2000000000000002
+          :case_path: 1.4000000000000001
+          :redirect_to: 1.2000000000000002
+          :render: 1.1
+        :score: 7.2698005474703375
+        :path: app/controllers/cases_controller.rb:26
+      CasesController#destroy:
+        :operators:
+          :destroy: 1.0
+          :assignment: 1.0
+          :flash: 1.0
+          :cases_path: 1.2
+          :redirect_to: 1.0
+        :score: 4.317406628984581
+        :path: app/controllers/cases_controller.rb:38
+      CasesController#set_case:
+        :operators:
+          :assignment: 1.0
+          :params: 1.4
+          :[]: 1.2
+          :find: 1.0
+        :score: 3.7363083384538807
+        :path: app/controllers/cases_controller.rb:45
+      CasesController#case_params:
+        :operators:
+          :params: 1.4
+          :require: 1.2
+          :permit: 1.0
+        :score: 3.5999999999999996
+        :path: app/controllers/cases_controller.rb:48
+      CasesController#none:
+        :operators:
+          :before_action: 1.0
+          :private: 1.0
+        :score: 2.0
+        :path: 
+      CasesController#index:
+        :operators:
+          :assignment: 1.0
+          :all: 1.0
+        :score: 1.4142135623730951
+        :path: app/controllers/cases_controller.rb:5
+      CasesController#new:
+        :operators:
+          :assignment: 1.0
+          :new: 1.0
+        :score: 1.4142135623730951
+        :path: app/controllers/cases_controller.rb:9
+  - :name: ApplicationController
+    :path: ''
+    :total_score: 1.0
+    :highest_score: 1.0
+    :average_score: 1.0
+    :methods:
+      ApplicationController#none:
+        :operators:
+          :protect_from_forgery: 1.0
+        :score: 1.0
+        :path: 
+:rails_best_practices:
+  :total:
+  - Found 3 errors.
+  :problems:
+  - :file: "/home/ubuntu/workspace/Trinity-Health/app/helpers/cases_helper.rb"
+    :line: '1'
+    :problem: remove empty helpers
+    :url: http://rails-bestpractices.com/posts/2011/04/09/remove-empty-helpers/
+  - :file: "/home/ubuntu/workspace/Trinity-Health/app/controllers/cases_controller.rb"
+    :line: '3'
+    :problem: remove trailing whitespace
+    :url: http://rails-bestpractices.com/posts/2010/12/02/remove-trailing-whitespace/
+  - :file: "/home/ubuntu/workspace/Trinity-Health/app/views/cases/new.html.erb"
+    :line: '5'
+    :problem: remove trailing whitespace
+    :url: http://rails-bestpractices.com/posts/2010/12/02/remove-trailing-whitespace/
+:hotspots:
+  files:
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:16
+      file_name: app/controllers/cases_controller.rb
+      line_number: '16'
+      hash_key: '["app/controllers/cases_controller.rb:16", nil, nil]'
+    details:
+      saikuro: complexity is 2.0
+      flog: complexity is 8.5
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:26
+      file_name: app/controllers/cases_controller.rb
+      line_number: '26'
+      hash_key: '["app/controllers/cases_controller.rb:26", nil, nil]'
+    details:
+      saikuro: average complexity is 1.3
+      flog: complexity is 7.3
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:38
+      file_name: app/controllers/cases_controller.rb
+      line_number: '38'
+      hash_key: '["app/controllers/cases_controller.rb:38", nil, nil]'
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 4.3
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:45
+      file_name: app/controllers/cases_controller.rb
+      line_number: '45'
+      hash_key: '["app/controllers/cases_controller.rb:45", nil, nil]'
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 3.7
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:48
+      file_name: app/controllers/cases_controller.rb
+      line_number: '48'
+      hash_key: '["app/controllers/cases_controller.rb:48", nil, nil]'
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 3.6
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:9
+      file_name: app/controllers/cases_controller.rb
+      line_number: '9'
+      hash_key: '["app/controllers/cases_controller.rb:9", nil, nil]'
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 1.4
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:5
+      file_name: app/controllers/cases_controller.rb
+      line_number: '5'
+      hash_key: '["app/controllers/cases_controller.rb:5", nil, nil]'
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 1.4
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/application_controller.rb
+      file_name: app/controllers/application_controller.rb
+      line_number: 
+      hash_key: '["app/controllers/application_controller.rb", nil, nil]'
+    details:
+      reek: found 1 code smells
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/models/case.rb
+      file_name: app/models/case.rb
+      line_number: 
+      hash_key: '["app/models/case.rb", nil, nil]'
+    details:
+      reek: found 1 code smells
+  - location:
+      class_name: 
+      method_name: 
+      file_path: app/controllers/cases_controller.rb
+      file_name: app/controllers/cases_controller.rb
+      line_number: 
+      hash_key: '["app/controllers/cases_controller.rb", nil, nil]'
+    details:
+      reek: found 1 code smells
+  classes:
+  - location:
+      class_name: main
+      method_name: 
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "main", nil]'
+    details:
+      flog: complexity is 79.4
+  - location:
+      class_name: CasesController
+      method_name: 
+      file_path: app/controllers/cases_controller.rb:26
+      file_name: app/controllers/cases_controller.rb
+      line_number: '26'
+      hash_key: '["app/controllers/cases_controller.rb:26", "CasesController", nil]'
+    details:
+      saikuro: average complexity is 1.2
+      reek: found 1 code smells
+      flog: average complexity is 4.0
+  - location:
+      class_name: ApplicationController
+      method_name: 
+      file_path: app/controllers/application_controller.rb
+      file_name: app/controllers/application_controller.rb
+      line_number: 
+      hash_key: '["app/controllers/application_controller.rb", "ApplicationController",
+        nil]'
+    details:
+      reek: found 1 code smells
+      flog: complexity is 1.0
+  - location:
+      class_name: Case
+      method_name: 
+      file_path: app/models/case.rb
+      file_name: app/models/case.rb
+      line_number: 
+      hash_key: '["app/models/case.rb", "Case", nil]'
+    details:
+      reek: found 1 code smells
+  methods:
+  - location:
+      class_name: main
+      method_name: main#none
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "main", "main#none"]'
+      simple_method_name: "#none"
+    details:
+      flog: complexity is 79.4
+  - location:
+      class_name: CasesController
+      method_name: CasesController#create
+      file_path: app/controllers/cases_controller.rb:16
+      file_name: app/controllers/cases_controller.rb
+      line_number: '16'
+      hash_key: '["app/controllers/cases_controller.rb:16", "CasesController", "CasesController#create"]'
+      simple_method_name: "#create"
+    details:
+      saikuro: complexity is 2.0
+      flog: complexity is 8.5
+  - location:
+      class_name: CasesController
+      method_name: CasesController#update
+      file_path: app/controllers/cases_controller.rb:26
+      file_name: app/controllers/cases_controller.rb
+      line_number: '26'
+      hash_key: '["app/controllers/cases_controller.rb:26", "CasesController", "CasesController#update"]'
+      simple_method_name: "#update"
+    details:
+      saikuro: complexity is 2.0
+      flog: complexity is 7.3
+  - location:
+      class_name: CasesController
+      method_name: CasesController#destroy
+      file_path: app/controllers/cases_controller.rb:38
+      file_name: app/controllers/cases_controller.rb
+      line_number: '38'
+      hash_key: '["app/controllers/cases_controller.rb:38", "CasesController", "CasesController#destroy"]'
+      simple_method_name: "#destroy"
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 4.3
+  - location:
+      class_name: CasesController
+      method_name: CasesController#set_case
+      file_path: app/controllers/cases_controller.rb:45
+      file_name: app/controllers/cases_controller.rb
+      line_number: '45'
+      hash_key: '["app/controllers/cases_controller.rb:45", "CasesController", "CasesController#set_case"]'
+      simple_method_name: "#set_case"
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 3.7
+  - location:
+      class_name: CasesController
+      method_name: CasesController#case_params
+      file_path: app/controllers/cases_controller.rb:48
+      file_name: app/controllers/cases_controller.rb
+      line_number: '48'
+      hash_key: '["app/controllers/cases_controller.rb:48", "CasesController", "CasesController#case_params"]'
+      simple_method_name: "#case_params"
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 3.6
+  - location:
+      class_name: CasesController
+      method_name: CasesController#new
+      file_path: app/controllers/cases_controller.rb:9
+      file_name: app/controllers/cases_controller.rb
+      line_number: '9'
+      hash_key: '["app/controllers/cases_controller.rb:9", "CasesController", "CasesController#new"]'
+      simple_method_name: "#new"
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 1.4
+  - location:
+      class_name: CasesController
+      method_name: CasesController#index
+      file_path: app/controllers/cases_controller.rb:5
+      file_name: app/controllers/cases_controller.rb
+      line_number: '5'
+      hash_key: '["app/controllers/cases_controller.rb:5", "CasesController", "CasesController#index"]'
+      simple_method_name: "#index"
+    details:
+      saikuro: complexity is 1.0
+      flog: complexity is 1.4
+  - location:
+      class_name: CasesController
+      method_name: CasesController#none
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "CasesController", "CasesController#none"]'
+      simple_method_name: "#none"
+    details:
+      flog: complexity is 2.0
+  - location:
+      class_name: CasesController
+      method_name: CasesController#show
+      file_path: app/controllers/cases_controller.rb:26
+      file_name: app/controllers/cases_controller.rb
+      line_number: '26'
+      hash_key: '["app/controllers/cases_controller.rb:26", "CasesController", "CasesController#show"]'
+      simple_method_name: "#show"
+    details:
+      saikuro: complexity is 1.0
+  - location:
+      class_name: CasesController
+      method_name: CasesController#edit
+      file_path: app/controllers/cases_controller.rb:26
+      file_name: app/controllers/cases_controller.rb
+      line_number: '26'
+      hash_key: '["app/controllers/cases_controller.rb:26", "CasesController", "CasesController#edit"]'
+      simple_method_name: "#edit"
+    details:
+      saikuro: complexity is 1.0
+  - location:
+      class_name: ApplicationController
+      method_name: ApplicationController#none
+      file_path: 
+      file_name: 
+      line_number: 
+      hash_key: '[nil, "ApplicationController", "ApplicationController#none"]'
+      simple_method_name: "#none"
+    details:
+      flog: complexity is 1.0
