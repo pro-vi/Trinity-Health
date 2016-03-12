@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CasesController do
+describe CasesController, :type => :controller do
     
     it "renders the index template" do
       get :index
@@ -11,4 +11,5 @@ describe CasesController do
         get :new
         expect(response).to render_template("new")
     end
+    
 end
