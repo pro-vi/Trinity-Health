@@ -21,9 +21,8 @@ Scenario: Delete cases
 
 Scenario: Verify deletes are successful
     Given I am on the home page
-    And I follow "Sally Mae"
     When I follow "Sally Mae"
-    When I click "Delete"
+    And I press "Delete"
     Then I should be on home page
-    Then I should not see "Sally Mae"
+    And I should not see "Sally Mae"
     
