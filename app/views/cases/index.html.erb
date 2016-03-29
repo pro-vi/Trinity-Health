@@ -1,8 +1,35 @@
 <h1>Cases</h1>
-<div>
-  <% @cases.each do |c| %>
-    <h5><%= link_to c.name, case_path(c) %></h5>
-  <% end %>
-</div>
+
+<table id="cases">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Diagnosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cases.each do |c| %>
+      <tr>
+        <td>
+          <%= link_to c.name, case_path(c) %>
+        </td>
+        <td>
+          <%= c.age %>
+        </td>
+        <td>
+          <%= c.gender %>
+        </td>
+        <td>
+          <%= c.diagnosis %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_case_path(c) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
 <%= link_to "Create new case", new_case_path %>

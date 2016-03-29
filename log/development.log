@@ -29,3 +29,924 @@ Migrating to CreateCases (20160310033335)
   [1m[35m (10.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160310033335')
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 73.231.49.119 at 2016-03-29 02:51:27 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 1960ms (Views: 1939.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 73.231.49.119 at 2016-03-29 02:51:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 02:51:40 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (236.2ms)
+Completed 200 OK in 284ms (Views: 272.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/cases" for 73.231.49.119 at 2016-03-29 02:51:45 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OpK/tOor29FcWdQZ1gY3qFclc2caVChoRWQcBBoIEx9Y7BPNne2btteZBNMUBYb2j5/jO2puVrpzeLIS/kibaA==", "case"=>{"name"=>"A", "age"=>"A", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"submit"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "A"], ["diagnosis", "A"], ["age", 0], ["gender", "Male"], ["created_at", "2016-03-29 02:51:45.939817"], ["updated_at", "2016-03-29 02:51:45.939817"]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 161ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 02:51:46 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.5ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 34.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:51:48 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 02:51:49 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cases" for 73.231.49.119 at 2016-03-29 02:51:51 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f2DFINYrDQScROtvowOz4CKx1fc3YT8GyNFAkyrwKuodHmlZoe1NYxeEO6VhAAK++gtFq0dbQdT+ze6FzrCinQ==", "case"=>{"name"=>"S", "age"=>"S", "gender"=>"Male", "diagnosis"=>"S"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "S"], ["diagnosis", "S"], ["age", 0], ["gender", "Male"], ["created_at", "2016-03-29 02:51:51.671142"], ["updated_at", "2016-03-29 02:51:51.671142"]]
+  [1m[35m (10.9ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases/2
+Completed 302 Found in 39ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/cases/2" for 73.231.49.119 at 2016-03-29 02:51:51 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:51:52 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 02:51:53 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cases" for 73.231.49.119 at 2016-03-29 02:51:55 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QN5Bs0xUYf69lpMuKvRvbQ/QJ/LQ4eD2IxAfqz/o/IwioO3KO5IhmTZWQ+To994z12q3rqDbniQVDLG926h0+w==", "case"=>{"name"=>"A", "age"=>"A", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "A"], ["diagnosis", "A"], ["age", 0], ["gender", "Male"], ["created_at", "2016-03-29 02:51:55.695847"], ["updated_at", "2016-03-29 02:51:55.695847"]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/3
+Completed 302 Found in 17ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/cases/3" for 73.231.49.119 at 2016-03-29 02:51:55 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered cases/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:51:56 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/3" for 73.231.49.119 at 2016-03-29 02:51:58 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered cases/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:51:59 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 02:52:00 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:52:00 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 73.231.49.119 at 2016-03-29 02:54:21 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 636ms (Views: 597.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 02:54:25 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.5ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 172ms (Views: 92.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 02:54:27 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 02:54:29 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 03:06:29 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 115ms (Views: 104.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 03:09:16 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases/new" for 73.231.49.119 at 2016-03-29 03:09:17 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.231.49.119 at 2016-03-29 03:09:20 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:09:22 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:09:23 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/2" for 73.231.49.119 at 2016-03-29 03:09:24 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:09:25 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:13:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/Trinity-Health/app/views/cases/index.html.erb:7: unknown regexp options - dv
+unmatched close parenthesis: /h5>
+  <% end );@output_buffer.safe_append='
+</i
+/home/ubuntu/workspace/Trinity-Health/app/views/cases/index.html.erb:10: unterminated string meets end of file
+/home/ubuntu/workspace/Trinity-Health/app/views/cases/index.html.erb:10: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/cases/index.html.erb:7: unknown regexp options - dv
+  app/views/cases/index.html.erb:10: unterminated string meets end of file
+  app/views/cases/index.html.erb:10: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.6ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:14:29 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.7ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 162ms (Views: 159.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:14:33 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.6ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cases/2/edit" for 73.231.49.119 at 2016-03-29 03:14:35 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered cases/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/3/edit" for 73.231.49.119 at 2016-03-29 03:14:38 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered cases/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 71ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 73.231.49.119 at 2016-03-29 03:18:31 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 540ms (Views: 508.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:35 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 129ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:18:38 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (216.9ms)
+Completed 200 OK in 286ms (Views: 283.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:41 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U3oMhep4fzdN0XcvHe8XQRxYooC0E/Y3bfRYEmtgIVQxBKD8nb4/UMYRp+Xf7KYfxOIy3MQpiOVb6PYEjyCpIw==", "case"=>{"name"=>"A", "age"=>"0j", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"submit", "id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mUPDATE "cases" SET "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?[0m  [["age", 0], ["updated_at", "2016-03-29 03:18:41.301926"], ["id", 1]]
+  [1m[35m (23.9ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 42ms (ActiveRecord: 25.8ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:41 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:18:43 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:45 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:18:46 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 153ms (Views: 151.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:18:46 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:54 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GT4IIq+GkgxZ1oelzvmos77PLhcHFWZhU5herJ6enER7QKRb2EDSa9IWV28M+hntZnW+S3cvGLNlhPC6et4UMw==", "case"=>{"name"=>"A", "age"=>"A0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"submit", "id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "cases" SET "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["age", 0], ["updated_at", "2016-03-29 03:18:54.027179"], ["id", 1]]
+  [1m[36m (18.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 91ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:18:54 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:18:56 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 173ms (Views: 171.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:19:52 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.9ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 97ms (Views: 93.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:22:36 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 135ms (Views: 133.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:22:54 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:29:23 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2IZy7GZNYfyzsILMb2dn5lJ1Sgu2x/ih8gkIOB0cOU66+N6VEYshmzhwUgatZNa4is/aV8b9hnPEFaYu+VyxOQ==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:29:23 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:29:37 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:29:39 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:29:41 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O3lDKUBDdKkt03XPBUkhfwz6+BGOJLkOPvEc83cXaMdZB+9QN4U0zqYTpQXHSpAh1EBoTf4ex9wI7bLlk1fgsA==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:29:41 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:30:00 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:30:49 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 54ms (Views: 37.2ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:30:50 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+lY6tEcDsws5gdwiZVQCumWJf0MuhNfcljLUz26mMteYKJbNMMXzbLJBDOinV7PkvTPvH16+qQ6gLnrZiua6oA==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.ioindex
+Completed 302 Found in 184ms (ActiveRecord: 0.5ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:31:01 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D7+09uD+9Yg0BeZwrF6J7adt1/iH9TDHRBfulMZ+t3BtwRiPlzi177/FNrpuXTizf9dHpPfPThVyC0CCIj4/Bw==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.5ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered cases/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Cases</h1>
+    2: <div>
+    3:   <% @cases.each do |c| %>
+    4:     <h5><%= link_to c.name, case_path(c) %></h5>
+    5:     <h5><%= link_to 'Edit', edit_case_path(c) %></h5>
+    6:   <% end %>
+  app/views/cases/index.html.erb:3:in `_app_views_cases_index_html_erb___4454816509093230371_23235120'
+  app/controllers/cases_controller.rb:34:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.4ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:31:27 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:32:10 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.4ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 44.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:32:12 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:32:13 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v1RHyyQbdrcIRdjlABoZHMJprfduHGaY/ayv6glcoDTdKuuyU9020IOFCC/CGahCGtM9qx4mGErLsAH87RwoQw==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 78ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:32:13 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:33:09 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 59ms (Views: 38.6ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:33:11 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUI2vWyC5tpqFMGhKPetx7dqApmN8ugdzuECM7GesPR3PJrEG0SmveHUEWvq9ByZb9CSxf3Ils/4/awlVd44gw==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 62ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:33:11 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:34:07 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases" for 73.231.49.119 at 2016-03-29 03:34:08 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [PATCH] "/cases"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:34:40 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.6ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:38:51 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 95ms (Views: 83.8ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:38:53 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"60qMhtXIDpgkQMnj34TwKpQHzTgSr/Uvvi2KXKcChrOJNCD/og5O/6+AGSkdh0F0TL1dZGKVi/2IMSRKQ0IOxA==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (12.0ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases/1
+Completed 302 Found in 16ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:38:53 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:38:55 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.5ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:39:24 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 116ms (Views: 100.6ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:39:25 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HYkfGMhTEGkOO0tfEhTyOMZ1f0MPbhWTTXbX84rGqr1/97Nhv5VQDoX7m5XQF0NmHs/vH39Ua0F7annlboYiyg==", "case"=>{"name"=>"A", "age"=>"0", "gender"=>"Male", "diagnosis"=>"A"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:39:25 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1" for 73.231.49.119 at 2016-03-29 03:39:30 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:39:32 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:39:39 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hmDfTh4O1KY+LoktzBxUs7r2Yxu01O/v6/eInjMY1BDkHnM3aciUwbXuWecOH+XtYkzzR8TukT3d6yaI11hcZw==", "case"=>{"name"=>"Aadfa", "age"=>"0sadf", "gender"=>"Female", "diagnosis"=>"Aadsf"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "cases" SET "name" = ?, "diagnosis" = ?, "age" = ?, "gender" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["name", "Aadfa"], ["diagnosis", "Aadsf"], ["age", 0], ["gender", "Female"], ["updated_at", "2016-03-29 03:39:39.998679"], ["id", 1]]
+  [1m[36m (92.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases
+Completed 302 Found in 98ms (ActiveRecord: 93.6ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:39:40 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:39:42 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/" for 73.231.49.119 at 2016-03-29 03:45:41 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.6ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:45:46 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:45:49 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6BtuTXfkJjHqx/HH3B0PWNWbZfl8xeDRTQxGmQ+N+eKKZcI0ACJmVmEHIQ0eHr4GDSH1pQz/ngN7EOiP681xlQ==", "case"=>{"name"=>"Aadfa", "age"=>"s23", "gender"=>"Female", "diagnosis"=>"Aadsf"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "cases" SET "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["age", 0], ["updated_at", "2016-03-29 03:45:49.496881"], ["id", 1]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases
+Completed 302 Found in 19ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:45:49 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:45:51 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:45:53 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V7SEMVA+OCBR3vqwFi3O2hq5CKibtTxAa8lBDwFRoVg1yihIJ/h4R9oeKnrULn+EwgOY9OuPQpJd1e8Z5REpLw==", "case"=>{"name"=>"Aadfa", "age"=>"123", "gender"=>"Female", "diagnosis"=>"Aadsf"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "cases" SET "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["age", 123], ["updated_at", "2016-03-29 03:45:53.347356"], ["id", 1]]
+  [1m[36m (154.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://trial169-heyucongtom.c9users.io/cases
+Completed 302 Found in 160ms (ActiveRecord: 154.7ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:45:53 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/1/edit" for 73.231.49.119 at 2016-03-29 03:46:01 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/cases/1" for 73.231.49.119 at 2016-03-29 03:46:02 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FVR/FnYE8BV8dfqbG6iE05C0YfZJdTyJENQPzDADyPR3KtNvAcKwcve1KlHZqzWNSA7xqjlPQlsmyKHa1ENAgw==", "case"=>{"name"=>"Aadfa", "age"=>"123", "gender"=>"Female", "diagnosis"=>"Aadsf"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://trial169-heyucongtom.c9users.io/cases
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/cases" for 73.231.49.119 at 2016-03-29 03:46:03 +0000
+Cannot render console from 73.231.49.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.3ms)
