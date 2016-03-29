@@ -86,6 +86,15 @@ When /^(?:|I )fill in the following:$/ do |fields|
   end
 end
 
+# Use the popup window to handle OK.
+When /^I confirm popup$/ do
+  page.driver.browser.switch_to.alert.accept    
+end
+
+When /^I dismiss popup$/ do
+  page.driver.browser.switch_to.alert.dismiss
+end
+
 When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
   select(value, :from => field)
 end
@@ -256,3 +265,5 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+

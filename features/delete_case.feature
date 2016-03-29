@@ -22,8 +22,8 @@ Scenario: Delete cases
 Scenario: Verify deletes are successful
     Given I am on the home page
     And I follow "Sally Mae"
-    When I follow "Sally Mae"
-    When I click "Delete"
-    Then I should be on home page
+    When I follow "Delete"
+    And I confirm popup
+    Then I should be on the home page
     Then I should not see "Sally Mae"
     

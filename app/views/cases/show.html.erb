@@ -8,3 +8,4 @@
 
 <%= link_to "Back to case list", cases_path %>
 <%= link_to "Edit", edit_case_path(@case) %>
+<%= link_to "Delete", case_path(@case), method: :delete, data: {confirm: 'Are you sure?'} %>
