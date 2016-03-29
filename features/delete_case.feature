@@ -21,16 +21,8 @@ Scenario: Delete cases
 
 Scenario: Verify deletes are successful
     Given I am on the home page
-<<<<<<< HEAD
-    When I follow "Sally Mae"
-    And I press "Delete"
-    Then I should be on home page
-    And I should not see "Sally Mae"
-=======
     And I follow "Sally Mae"
     When I follow "Delete"
-    And I confirm popup
     Then I should be on the home page
     Then I should not see "Sally Mae"
->>>>>>> 834419709e0ea087d96ca9179ab7ca78706ecde7
     

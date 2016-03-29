@@ -6,7 +6,6 @@
 
 require 'cucumber/rails'
 require 'simplecov'
-require 'capybara-webkit'
 SimpleCov.start do
   add_filter "/features/"
 end
