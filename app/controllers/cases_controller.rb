@@ -14,6 +14,7 @@ class CasesController < ApplicationController
   end
   
   def edit
+    @case = Case.find(params[:id])
   end
   
   def create
@@ -27,6 +28,13 @@ class CasesController < ApplicationController
   end
   
   def update
+    @case = Case.find(params[:id])
+    
+    if @case.update(case_params)
+      redirect_to cases_path
+    else
+      render 'edit'
+    end
   end
   
   def show
