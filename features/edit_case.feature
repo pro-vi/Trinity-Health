@@ -22,10 +22,19 @@ Scenario: Edit cases
 Scenario: Verify edits are saved
     Given I am on the home page
     And I follow "Sally Mae"
+<<<<<<< HEAD
     When I press "Edit"
     Then I should be on the edit page for "Sally Mae"
     And I fill in "Diagnosis" with "Cardiovascular Disease"
     And I press "Save"
     Then I should be on home page
     And I should see "Cardiovascular Disease"
+=======
+    When I follow "Edit"
+    Then I should be on the edit page for "Sally Mae"
+    Then I fill in "Diagnosis" with "Cardiovascular Disease"
+    Then I press "Save"
+    Then I should be on the home page
+    Then I should see "Cardiovascular Disease"
+>>>>>>> 834419709e0ea087d96ca9179ab7ca78706ecde7
     
