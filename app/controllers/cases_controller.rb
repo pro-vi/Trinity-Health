@@ -47,7 +47,5 @@ class CasesController < ApplicationController
     
     redirect_to cases_path
   end
-  
-  
 
 end

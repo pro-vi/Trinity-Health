@@ -7,6 +7,7 @@ Feature: Add clinician
 Scenario: Create profile
   When I go to the create clinician page
   And I fill in "Name" with "Dr. Patrick Soon Shiong"
+  And I fill in "Email" with "p.s.shiong@ucsf.org"
   And I fill in "Speciality" with "Oncology"
   And I press "Save"
   Then I should be on the home page
