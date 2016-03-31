@@ -1,0 +1,11 @@
+<h3><%= @clinician.name %></h3>
+<ul id="clinician_menu">
+
+</ul>
+<ul id="email">
+  <p>Email: <%= @clinician.email %></p>
+</ul>
+
+<%= link_to "Back to case list", cases_path %> 
+<%= link_to "Edit", edit_clinician_path(@clinician) %>
+<%= link_to "Delete", clinician_path(@clinician), method: :delete, data: {confirm: 'Are you sure?'} %>
