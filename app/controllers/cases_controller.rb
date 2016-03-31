@@ -45,5 +45,9 @@ class CasesController < ApplicationController
     @case.destroy
     redirect_to cases_path
   end
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> 16dac1f05bf22dbba03cad4fb1eafb66bdec70e6
 end
