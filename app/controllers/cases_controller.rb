@@ -29,7 +29,6 @@ class CasesController < ApplicationController
   
   def update
     @case = Case.find(params[:id])
-    
     if @case.update(case_params)
       redirect_to cases_path
     else
@@ -44,10 +43,7 @@ class CasesController < ApplicationController
   def destroy
     @case = Case.find(params[:id])
     @case.destroy
-    
     redirect_to cases_path
   end
   
-  
-
 end
