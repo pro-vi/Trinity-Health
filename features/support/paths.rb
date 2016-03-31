@@ -18,6 +18,9 @@ module NavigationHelpers
 
     when /^the edit page for "(.*)"$/
       edit_case_path(Case.find_by_name($1))
+      
+    when /^the create clinician page$/
+      new_clinician_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -6,6 +6,10 @@
   <p>Email: <%= @clinician.email %></p>
 </ul>
 
-<%= link_to "Back to case list", cases_path %> 
-<%= link_to "Edit", edit_clinician_path(@clinician) %>
-<%= link_to "Delete", clinician_path(@clinician), method: :delete, data: {confirm: 'Are you sure?'} %>
+</ul>
+<ul id="specialty">
+  <p>Specialty: <%= @clinician.specialty %></p>
+</ul>
+
+
+<%= link_to "Back to case list", cases_path %>

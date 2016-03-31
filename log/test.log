@@ -10056,3 +10056,1124 @@ Processing by CasesController#index as HTML
   Rendered cases/index.html.erb within layouts/application (2.9ms)
 Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.3ms)
   [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:00 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1093ms (Views: 1054.1ms | ActiveRecord: 0.3ms)
+Started GET "/cases/new" for 127.0.0.1 at 2016-03-31 01:30:01 +0000
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 131ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+Started POST "/cases" for 127.0.0.1 at 2016-03-31 01:30:01 +0000
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-03-31 01:30:01.988970"], ["updated_at", "2016-03-31 01:30:01.988970"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 14ms (ActiveRecord: 0.8ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.081721"], ["updated_at", "2016-03-31 01:30:02.081721"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.084915"], ["updated_at", "2016-03-31 01:30:02.084915"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.093775"], ["updated_at", "2016-03-31 01:30:02.093775"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.098985"], ["updated_at", "2016-03-31 01:30:02.098985"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.133524"], ["updated_at", "2016-03-31 01:30:02.133524"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.135844"], ["updated_at", "2016-03-31 01:30:02.135844"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.137637"], ["updated_at", "2016-03-31 01:30:02.137637"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.139299"], ["updated_at", "2016-03-31 01:30:02.139299"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.1ms)
+Started DELETE "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "cases" WHERE "cases"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.195978"], ["updated_at", "2016-03-31 01:30:02.195978"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.200786"], ["updated_at", "2016-03-31 01:30:02.200786"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.203376"], ["updated_at", "2016-03-31 01:30:02.203376"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.205393"], ["updated_at", "2016-03-31 01:30:02.205393"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.232282"], ["updated_at", "2016-03-31 01:30:02.232282"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.234602"], ["updated_at", "2016-03-31 01:30:02.234602"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.236794"], ["updated_at", "2016-03-31 01:30:02.236794"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.239427"], ["updated_at", "2016-03-31 01:30:02.239427"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.269267"], ["updated_at", "2016-03-31 01:30:02.269267"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.271581"], ["updated_at", "2016-03-31 01:30:02.271581"]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.273998"], ["updated_at", "2016-03-31 01:30:02.273998"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.276372"], ["updated_at", "2016-03-31 01:30:02.276372"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:30:02.311746"], ["updated_at", "2016-03-31 01:30:02.311746"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:30:02.313961"], ["updated_at", "2016-03-31 01:30:02.313961"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:30:02.316645"], ["updated_at", "2016-03-31 01:30:02.316645"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:30:02.318516"], ["updated_at", "2016-03-31 01:30:02.318516"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+Started GET "/cases/1/edit" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms)
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."name" = ? LIMIT 1[0m  [["name", "Sally Mae"]]
+Started PATCH "/cases/1" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"Sally Mae", "age"=>"102", "gender"=>"Male", "diagnosis"=>"Cardiovascular Disease"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "cases" SET "diagnosis" = ?, "gender" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["diagnosis", "Cardiovascular Disease"], ["gender", "Male"], ["updated_at", "2016-03-31 01:30:02.365349"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:30:02 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.1ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:33:22 +0000
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:34:54 +0000
+Processing by CliniciansController#new as HTML
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:36:50 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 592ms (Views: 548.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:19 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 393ms (Views: 359.3ms | ActiveRecord: 0.5ms)
+Started GET "/cases/new" for 127.0.0.1 at 2016-03-31 01:39:19 +0000
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (94.7ms)
+Completed 200 OK in 112ms (Views: 104.7ms | ActiveRecord: 0.2ms)
+Started POST "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-03-31 01:39:20.115819"], ["updated_at", "2016-03-31 01:39:20.115819"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 47ms (Views: 8.4ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.194734"], ["updated_at", "2016-03-31 01:39:20.194734"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.197995"], ["updated_at", "2016-03-31 01:39:20.197995"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.201641"], ["updated_at", "2016-03-31 01:39:20.201641"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.204248"], ["updated_at", "2016-03-31 01:39:20.204248"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.252301"], ["updated_at", "2016-03-31 01:39:20.252301"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.255435"], ["updated_at", "2016-03-31 01:39:20.255435"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.257738"], ["updated_at", "2016-03-31 01:39:20.257738"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.260012"], ["updated_at", "2016-03-31 01:39:20.260012"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+Started DELETE "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "cases" WHERE "cases"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.1ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.307279"], ["updated_at", "2016-03-31 01:39:20.307279"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.309488"], ["updated_at", "2016-03-31 01:39:20.309488"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.312738"], ["updated_at", "2016-03-31 01:39:20.312738"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.315134"], ["updated_at", "2016-03-31 01:39:20.315134"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.343066"], ["updated_at", "2016-03-31 01:39:20.343066"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.345300"], ["updated_at", "2016-03-31 01:39:20.345300"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.347450"], ["updated_at", "2016-03-31 01:39:20.347450"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.349342"], ["updated_at", "2016-03-31 01:39:20.349342"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.376929"], ["updated_at", "2016-03-31 01:39:20.376929"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.380905"], ["updated_at", "2016-03-31 01:39:20.380905"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.383117"], ["updated_at", "2016-03-31 01:39:20.383117"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.385181"], ["updated_at", "2016-03-31 01:39:20.385181"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:39:20.417232"], ["updated_at", "2016-03-31 01:39:20.417232"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:39:20.419497"], ["updated_at", "2016-03-31 01:39:20.419497"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:39:20.422554"], ["updated_at", "2016-03-31 01:39:20.422554"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:39:20.424329"], ["updated_at", "2016-03-31 01:39:20.424329"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+Started GET "/cases/1/edit" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.1ms)
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."name" = ? LIMIT 1[0m  [["name", "Sally Mae"]]
+Started PATCH "/cases/1" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"Sally Mae", "age"=>"102", "gender"=>"Male", "diagnosis"=>"Cardiovascular Disease"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "cases" SET "diagnosis" = ?, "gender" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["diagnosis", "Cardiovascular Disease"], ["gender", "Male"], ["updated_at", "2016-03-31 01:39:20.487618"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:39:20 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:42:54 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (106.6ms)
+Completed 200 OK in 504ms (Views: 466.1ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:43:22 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (101.9ms)
+Completed 200 OK in 547ms (Views: 509.2ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:44:07 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (114.5ms)
+Completed 200 OK in 592ms (Views: 532.9ms | ActiveRecord: 3.2ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:44:07 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"", "specialty"=>"Oncology"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:44:48 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 604ms (Views: 538.1ms | ActiveRecord: 0.6ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:44:49 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"", "specialty"=>"Oncology"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:45:17 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 548ms (Views: 497.9ms | ActiveRecord: 0.6ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:45:17 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"", "specialty"=>"Oncology"}, "commit"=>"submit"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:46:38 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 445ms (Views: 403.8ms | ActiveRecord: 0.4ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:46:38 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered clinicians/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:50:49 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 549ms (Views: 489.5ms | ActiveRecord: 0.5ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:50:50 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered clinicians/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:54:24 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 461ms (Views: 420.9ms | ActiveRecord: 0.5ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:54:24 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"Oncology", "specialty"=>""}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "clinicians" ("name", "email", "specialty") VALUES (?, ?, ?)  [["name", "Dr. Patrick Soon Shiong"], ["email", "Oncology"], ["specialty", ""]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/clinicians/1
+Completed 302 Found in 19ms (ActiveRecord: 0.7ms)
+Started GET "/clinicians/1" for 127.0.0.1 at 2016-03-31 01:54:24 +0000
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.3ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered clinicians/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:56:08 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (98.2ms)
+Completed 200 OK in 526ms (Views: 478.4ms | ActiveRecord: 0.5ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:56:08 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"race.master@eecs.berkeley.edu", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "clinicians" ("name", "email", "specialty") VALUES (?, ?, ?)  [["name", "Dr. Patrick Soon Shiong"], ["email", "race.master@eecs.berkeley.edu"], ["specialty", "Oncology"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/clinicians/1
+Completed 302 Found in 16ms (ActiveRecord: 0.9ms)
+Started GET "/clinicians/1" for 127.0.0.1 at 2016-03-31 01:56:08 +0000
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.2ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered clinicians/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:57:21 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (122.3ms)
+Completed 200 OK in 1175ms (Views: 1094.0ms | ActiveRecord: 0.6ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:57:22 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"race.master@eecs.berkeley.edu", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "clinicians" ("name", "email", "specialty") VALUES (?, ?, ?)  [["name", "Dr. Patrick Soon Shiong"], ["email", "race.master@eecs.berkeley.edu"], ["specialty", "Oncology"]]
+  [1m[36m (6.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/clinicians/1
+Completed 302 Found in 33ms (ActiveRecord: 6.7ms)
+Started GET "/clinicians/1" for 127.0.0.1 at 2016-03-31 01:57:22 +0000
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.4ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered clinicians/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 69ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:44 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 483ms (Views: 430.1ms | ActiveRecord: 0.5ms)
+Started GET "/cases/new" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (105.4ms)
+Completed 200 OK in 126ms (Views: 109.6ms | ActiveRecord: 0.4ms)
+Started POST "/cases" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-03-31 01:57:45.619900"], ["updated_at", "2016-03-31 01:57:45.619900"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 21ms (ActiveRecord: 0.9ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 60ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 17.9ms | ActiveRecord: 0.3ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"race.master@eecs.berkeley.edu", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "clinicians" ("name", "email", "specialty") VALUES (?, ?, ?)[0m  [["name", "Dr. Patrick Soon Shiong"], ["email", "race.master@eecs.berkeley.edu"], ["specialty", "Oncology"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/clinicians/1
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+Started GET "/clinicians/1" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClinician Load (0.2ms)[0m  [1mSELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered clinicians/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:45.814377"], ["updated_at", "2016-03-31 01:57:45.814377"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:45.817553"], ["updated_at", "2016-03-31 01:57:45.817553"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:45.820001"], ["updated_at", "2016-03-31 01:57:45.820001"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:45.821918"], ["updated_at", "2016-03-31 01:57:45.821918"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.5ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:45.886221"], ["updated_at", "2016-03-31 01:57:45.886221"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:45.889551"], ["updated_at", "2016-03-31 01:57:45.889551"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:45.893109"], ["updated_at", "2016-03-31 01:57:45.893109"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:45.896515"], ["updated_at", "2016-03-31 01:57:45.896515"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+Started DELETE "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "cases" WHERE "cases"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:45 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:45.981085"], ["updated_at", "2016-03-31 01:57:45.981085"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:45.986965"], ["updated_at", "2016-03-31 01:57:45.986965"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:45.988933"], ["updated_at", "2016-03-31 01:57:45.988933"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:45.991169"], ["updated_at", "2016-03-31 01:57:45.991169"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:46.052083"], ["updated_at", "2016-03-31 01:57:46.052083"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:46.055075"], ["updated_at", "2016-03-31 01:57:46.055075"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:46.058007"], ["updated_at", "2016-03-31 01:57:46.058007"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:46.060443"], ["updated_at", "2016-03-31 01:57:46.060443"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:46.105812"], ["updated_at", "2016-03-31 01:57:46.105812"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:46.109703"], ["updated_at", "2016-03-31 01:57:46.109703"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:46.112758"], ["updated_at", "2016-03-31 01:57:46.112758"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:46.114739"], ["updated_at", "2016-03-31 01:57:46.114739"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:57:46.176857"], ["updated_at", "2016-03-31 01:57:46.176857"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:57:46.179842"], ["updated_at", "2016-03-31 01:57:46.179842"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:57:46.181815"], ["updated_at", "2016-03-31 01:57:46.181815"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:57:46.184077"], ["updated_at", "2016-03-31 01:57:46.184077"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started GET "/cases/1/edit" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."name" = ? LIMIT 1[0m  [["name", "Sally Mae"]]
+Started PATCH "/cases/1" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"Sally Mae", "age"=>"102", "gender"=>"Male", "diagnosis"=>"Cardiovascular Disease"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "cases" SET "diagnosis" = ?, "gender" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["diagnosis", "Cardiovascular Disease"], ["gender", "Male"], ["updated_at", "2016-03-31 01:57:46.248629"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:57:46 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.1ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:49 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 407ms (Views: 368.1ms | ActiveRecord: 0.5ms)
+Started GET "/cases/new" for 127.0.0.1 at 2016-03-31 01:58:49 +0000
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (89.2ms)
+Completed 200 OK in 110ms (Views: 93.7ms | ActiveRecord: 0.4ms)
+Started POST "/cases" for 127.0.0.1 at 2016-03-31 01:58:49 +0000
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-03-31 01:58:49.928711"], ["updated_at", "2016-03-31 01:58:49.928711"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 17ms (ActiveRecord: 0.7ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:49 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.4ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/clinicians/new" for 127.0.0.1 at 2016-03-31 01:58:49 +0000
+Processing by CliniciansController#new as HTML
+  Rendered clinicians/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 34ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+Started POST "/clinicians" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CliniciansController#create as HTML
+  Parameters: {"utf8"=>"✓", "clinician"=>{"name"=>"Dr. Patrick Soon Shiong", "email"=>"race.master@eecs.berkeley.edu", "specialty"=>"Oncology"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clinicians" ("name", "email", "specialty") VALUES (?, ?, ?)[0m  [["name", "Dr. Patrick Soon Shiong"], ["email", "race.master@eecs.berkeley.edu"], ["specialty", "Oncology"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/clinicians/1
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+Started GET "/clinicians/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClinician Load (0.1ms)[0m  [1mSELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered clinicians/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.087523"], ["updated_at", "2016-03-31 01:58:50.087523"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.090124"], ["updated_at", "2016-03-31 01:58:50.090124"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.092484"], ["updated_at", "2016-03-31 01:58:50.092484"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.095184"], ["updated_at", "2016-03-31 01:58:50.095184"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.140347"], ["updated_at", "2016-03-31 01:58:50.140347"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.143009"], ["updated_at", "2016-03-31 01:58:50.143009"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.145085"], ["updated_at", "2016-03-31 01:58:50.145085"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.147165"], ["updated_at", "2016-03-31 01:58:50.147165"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.2ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Started DELETE "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "cases" WHERE "cases"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.206971"], ["updated_at", "2016-03-31 01:58:50.206971"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.210314"], ["updated_at", "2016-03-31 01:58:50.210314"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.213500"], ["updated_at", "2016-03-31 01:58:50.213500"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.216153"], ["updated_at", "2016-03-31 01:58:50.216153"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.263656"], ["updated_at", "2016-03-31 01:58:50.263656"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.267744"], ["updated_at", "2016-03-31 01:58:50.267744"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.270749"], ["updated_at", "2016-03-31 01:58:50.270749"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.273329"], ["updated_at", "2016-03-31 01:58:50.273329"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.320173"], ["updated_at", "2016-03-31 01:58:50.320173"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.323388"], ["updated_at", "2016-03-31 01:58:50.323388"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.326323"], ["updated_at", "2016-03-31 01:58:50.326323"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.328684"], ["updated_at", "2016-03-31 01:58:50.328684"]]
+  [1m[36m (3.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sally Mae"], ["age", 102], ["gender", "F"], ["diagnosis", "Breast Cancer"], ["created_at", "2016-03-31 01:58:50.381600"], ["updated_at", "2016-03-31 01:58:50.381600"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Freddie Mac"], ["age", 99], ["gender", "M"], ["diagnosis", "Lung Cancer"], ["created_at", "2016-03-31 01:58:50.384844"], ["updated_at", "2016-03-31 01:58:50.384844"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kanye West"], ["age", 8], ["gender", "M"], ["diagnosis", "Flu"], ["created_at", "2016-03-31 01:58:50.388171"], ["updated_at", "2016-03-31 01:58:50.388171"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cases" ("name", "age", "gender", "diagnosis", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Somebody Else"], ["age", 50], ["gender", "M"], ["diagnosis", "Diabetes"], ["created_at", "2016-03-31 01:58:50.391092"], ["updated_at", "2016-03-31 01:58:50.391092"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCase Load (0.1ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started GET "/cases/1/edit" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/edit.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."name" = ? LIMIT 1[0m  [["name", "Sally Mae"]]
+Started PATCH "/cases/1" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"Sally Mae", "age"=>"102", "gender"=>"Male", "diagnosis"=>"Cardiovascular Disease"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "cases" SET "diagnosis" = ?, "gender" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["diagnosis", "Cardiovascular Disease"], ["gender", "Male"], ["updated_at", "2016-03-31 01:58:50.469321"], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+Started GET "/cases" for 127.0.0.1 at 2016-03-31 01:58:50 +0000
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
