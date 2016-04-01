@@ -24,8 +24,7 @@ Scenario: Verify edits are saved
     And I follow "Sally Mae"
     When I follow "Edit"
     Then I should be on the edit page for "Sally Mae"
-    Then I fill in "Diagnosis" with "Cardiovascular Disease"
-    Then I press "Save"
-    Then I should be on the home page
+    When I fill in "Diagnosis" with "Cardiovascular Disease"
+    And I press "Update Case"
     Then I should see "Cardiovascular Disease"
     
