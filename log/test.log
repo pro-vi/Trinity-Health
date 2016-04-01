@@ -13847,3 +13847,115 @@ Processing by CasesController#show as HTML
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.1ms)
   [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/cases/new" for 127.0.0.1 at 2016-04-01 12:26:39 -0700
+Processing by CasesController#new as HTML
+  Rendered shared/_errors.html.erb (3.3ms)
+  Rendered cases/_form.html.erb (29.4ms)
+  Rendered cases/new.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5673ms (Views: 5652.4ms | ActiveRecord: 0.3ms)
+Started POST "/cases" for 127.0.0.1 at 2016-04-01 12:26:45 -0700
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-04-01 19:26:45.188280"], ["updated_at", "2016-04-01 19:26:45.188280"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-04-01 12:26:45 -0700
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/cases/new" for 127.0.0.1 at 2016-04-01 12:26:45 -0700
+Processing by CasesController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered cases/_form.html.erb (2.7ms)
+  Rendered cases/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started POST "/cases" for 127.0.0.1 at 2016-04-01 12:26:45 -0700
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_errors.html.erb (0.6ms)
+  Rendered cases/_form.html.erb (3.5ms)
+  Rendered cases/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/cases/new" for 127.0.0.1 at 2016-04-01 12:28:13 -0700
+Processing by CasesController#new as HTML
+  Rendered shared/_errors.html.erb (3.0ms)
+  Rendered cases/_form.html.erb (29.3ms)
+  Rendered cases/new.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 442ms (Views: 421.4ms | ActiveRecord: 0.2ms)
+Started POST "/cases" for 127.0.0.1 at 2016-04-01 12:28:14 -0700
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>"Common Cold"}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "King Kong"], ["diagnosis", "Common Cold"], ["gender", "Male"], ["created_at", "2016-04-01 19:28:14.141313"], ["updated_at", "2016-04-01 19:28:14.141313"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/cases/1
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+Started GET "/cases/1" for 127.0.0.1 at 2016-04-01 12:28:14 -0700
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCase Load (0.1ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cases/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/cases/new" for 127.0.0.1 at 2016-04-01 12:28:14 -0700
+Processing by CasesController#new as HTML
+  Rendered shared/_errors.html.erb (0.0ms)
+  Rendered cases/_form.html.erb (2.4ms)
+  Rendered cases/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.1ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+Started POST "/cases" for 127.0.0.1 at 2016-04-01 12:28:14 -0700
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "case"=>{"name"=>"King Kong", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered cases/_form.html.erb (2.2ms)
+  Rendered cases/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

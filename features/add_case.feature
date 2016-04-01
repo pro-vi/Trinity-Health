@@ -11,3 +11,9 @@ Scenario: add case
   And I press "Create Case"
   Then I should see "King Kong"
   And I should see "Common Cold"
+
+Scenario: sad path if user doesn't put all required fields for new case
+  Given I am on the new_case page
+  And I fill in "Name" with "King Kong"
+  And I press "Create Case"
+  Then I should not see "Case was successfully created"
