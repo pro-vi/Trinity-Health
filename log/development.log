@@ -1042,3 +1042,100 @@ Migrating to CreateClinicians (20160331003053)
   [1m[35m (9.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160331003053')
   [1m[36m (10.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160310033335')[0m
   [1m[35m (10.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160331000052')
+
+
+Started GET "/" for 192.77.239.230 at 2016-04-01 05:51:43 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.4ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 1804ms (Views: 1760.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 192.77.239.230 at 2016-04-01 05:51:46 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 05:52:05 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 112ms (Views: 104.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 05:52:10 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 05:52:12 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 05:52:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IlyD78Y4S438Dj0FSwszhTinb/TIXXJRAVF+RtmSFNVbABzQ65nUhz0F6jfvG6UdBZeE6C1W/S4nHBKVTtGbRw==", "case"=>{"name"=>"123", "age"=>"123", "gender"=>"Male", "diagnosis"=>"123"}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "123"], ["diagnosis", "123"], ["age", 123], ["gender", "Male"], ["created_at", "2016-04-01 05:52:15.318196"], ["updated_at", "2016-04-01 05:52:15.318196"]]
+  [1m[35m (13.7ms)[0m  commit transaction
+Redirected to https://rails-to-success-providencexz.c9users.io/cases/8
+Completed 302 Found in 179ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/cases/8" for 192.77.239.230 at 2016-04-01 05:52:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cases/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 05:52:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
