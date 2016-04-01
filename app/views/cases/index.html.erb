@@ -15,7 +15,9 @@
           Gender: <%= c.gender %>
         </div>
         <div class="case-diagnosis">
-          <span>Diagnosis:</span>
+          Diagnosis:
+        </div>
+        <div class="case-diagnosis-content">
           <%= truncate(c.diagnosis, length: 80) %>
         </div>
         <div class="case-actions">

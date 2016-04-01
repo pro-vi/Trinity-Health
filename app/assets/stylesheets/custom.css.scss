@@ -38,12 +38,13 @@ footer ul li {
 }
 
 .case-diagnosis {
-  border-top: 1px solid #eaeaea;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.case-diagnosis span {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+.case-diagnosis-content {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
