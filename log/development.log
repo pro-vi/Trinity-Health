@@ -4236,3 +4236,1687 @@ Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:37:04 +0000
 Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:38:25 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1765ms (Views: 1763.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:38:27 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:38:27 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/_form.html.erb (9.8ms)
+  Rendered cases/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:46:28 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/_form.html.erb (3.7ms)
+  Rendered cases/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:47:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:47:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 218ms (Views: 216.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/8/edit" for 192.77.239.230 at 2016-04-01 06:48:25 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cases/_form.html.erb (5.5ms)
+  Rendered cases/edit.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 119.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/cases/8" for 192.77.239.230 at 2016-04-01 06:48:35 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWAQcJUzfIrWN+w7I71tGWqVfEnga8hpF0ZnkM45Ol/gPI9PuJLjgBc8OwmHrfuBV6WXVQVgRxYxCwtDWXq1zQ==", "case"=>{"name"=>"123", "age"=>"12", "gender"=>"Male", "diagnosis"=>"123"}, "commit"=>"Update Case", "id"=>"8"}
+  [1m[35mCase Load (0.3ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "cases" SET "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["age", 12], ["updated_at", "2016-04-01 06:48:35.503198"], ["id", 8]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-to-success-providencexz.c9users.io/cases
+Completed 302 Found in 19ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:48:35 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/8/edit" for 192.77.239.230 at 2016-04-01 06:48:37 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cases/_form.html.erb (2.7ms)
+  Rendered cases/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 192ms (Views: 190.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cases/8" for 192.77.239.230 at 2016-04-01 06:48:57 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vCnnyuyjuDCZSdNcNdS2/3teeFIU/L8RZZ/RY75CPB/FdXj1wQInOlhCBG6RxCBnRm6TTvH3MG5D0r2wKQGzjQ==", "case"=>{"name"=>"John", "age"=>"19", "gender"=>"Male", "diagnosis"=>"I don't know what happened to him."}, "commit"=>"Update Case", "id"=>"8"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "cases" SET "name" = ?, "diagnosis" = ?, "age" = ?, "updated_at" = ? WHERE "cases"."id" = ?  [["name", "John"], ["diagnosis", "I don't know what happened to him."], ["age", 19], ["updated_at", "2016-04-01 06:48:57.693016"], ["id", 8]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-to-success-providencexz.c9users.io/cases
+Completed 302 Found in 19ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:48:57 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 213ms (Views: 211.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:11 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/8/edit" for 192.77.239.230 at 2016-04-01 06:53:12 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered cases/_form.html.erb (2.8ms)
+  Rendered cases/edit.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 112ms (Views: 110.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases/8/edit" for 192.77.239.230 at 2016-04-01 06:53:16 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cases/_form.html.erb (2.8ms)
+  Rendered cases/edit.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:16 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:16 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:53:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/8/edit" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered cases/_form.html.erb (3.6ms)
+  Rendered cases/edit.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 162.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:54:59 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:55:00 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started PATCH "/cases/8" for 192.77.239.230 at 2016-04-01 06:55:45 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o9LkQfxkJ0kTGLIySMhMq9stKoCgIeCkIl64DkS5wXDajnt+0cW4Q9ITZQDs2Noz5h3BnEUqb9sEE9Td0/pO4g==", "case"=>{"name"=>"John", "age"=>"19", "gender"=>"Male", "diagnosis"=>"I don't know what happened to him."}, "commit"=>"Update Case", "id"=>"8"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-to-success-providencexz.c9users.io/cases
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:55:45 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 94.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:55:51 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered cases/_form.html.erb (2.6ms)
+  Rendered cases/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 136ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 06:56:04 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2iMLQampzFYjE5KUhPO2RFkaJsCWTa1YWNvaEv5vWkajf5R+hAhTXOIYRaYg4yDcZCrN3HNGIid+lrbBaSzV1A==", "case"=>{"name"=>"Bob", "age"=>"23", "gender"=>"Male", "diagnosis"=>"This Bob is for testing."}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Bob"], ["diagnosis", "This Bob is for testing."], ["age", 23], ["gender", "Male"], ["created_at", "2016-04-01 06:56:04.047148"], ["updated_at", "2016-04-01 06:56:04.047148"]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-to-success-providencexz.c9users.io/cases/9
+Completed 302 Found in 15ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/cases/9" for 192.77.239.230 at 2016-04-01 06:56:04 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered cases/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 102.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:56:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 06:59:08 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/new" for 192.77.239.230 at 2016-04-01 06:59:10 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#new as HTML
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered cases/_form.html.erb (180.5ms)
+  Rendered cases/new.html.erb within layouts/application (182.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 287ms (Views: 285.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 06:59:12 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YxoD232NklKl0EooVmcba6+nAsrBYsYsFxTj9qyjISwaRpzkUCwNWGTbnRryd43zkpfp1iRpSVMxWY8lO+Cuvg==", "case"=>{"name"=>"", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (2.0ms)
+  Rendered cases/_form.html.erb (7.3ms)
+  Rendered cases/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 148ms (Views: 144.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 06:59:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfTg/9mNqUD1wABUtW1j8CAAV2ghrrM8TCfbvKtVpH9kqH/A9Cw2SjTL12YRffVoHTC8dMSlPENqardvPBYr7Q==", "case"=>{"name"=>"", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (1.2ms)
+  Rendered cases/_form.html.erb (5.1ms)
+  Rendered cases/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 249ms (Views: 245.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfTg/9mNqUD1wABUtW1j8CAAV2ghrrM8TCfbvKtVpH9kqH/A9Cw2SjTL12YRffVoHTC8dMSlPENqardvPBYr7Q==", "case"=>{"name"=>"", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered cases/_form.html.erb (5.3ms)
+  Rendered cases/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 163.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 07:01:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 07:01:18 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7kQGWX+hJBPUPzpns3plHve7rS5KlY90vPfWikgE91e5Y8mSF8bmo5bK9s63X8MRu4FqFwh2UL0vrOJvmOcTw==", "case"=>{"name"=>"", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (1.2ms)
+  Rendered cases/_form.html.erb (5.7ms)
+  Rendered cases/new.html.erb within layouts/application (83.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 187ms (Views: 182.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 07:01:21 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vqYZ2yoMo1eQbLD/l71pISVgzfFYm5EvurWg+8xPJD/H+obkB608XVFnZ80zrf+5GFAm7b2QHlCc+MwoWwyrrQ==", "case"=>{"name"=>"", "age"=>"", "gender"=>"Male", "diagnosis"=>""}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_errors.html.erb (1.4ms)
+  Rendered cases/_form.html.erb (5.4ms)
+  Rendered cases/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 176.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cases" for 192.77.239.230 at 2016-04-01 07:01:35 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"59lcBh28izGMBWlNOUmmKKu204cJihAU6vU6hInMJWmehcM5MB0UO00Ovn+dWTCwloY4m+yBn2vMuFZXHo+q+w==", "case"=>{"name"=>"Another Bob", "age"=>"22", "gender"=>"Male", "diagnosis"=>"Another Bob for testing."}, "commit"=>"Create Case"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cases" ("name", "diagnosis", "age", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Another Bob"], ["diagnosis", "Another Bob for testing."], ["age", 22], ["gender", "Male"], ["created_at", "2016-04-01 07:01:35.425439"], ["updated_at", "2016-04-01 07:01:35.425439"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://rails-to-success-providencexz.c9users.io/cases/10
+Completed 302 Found in 14ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/cases/10" for 192.77.239.230 at 2016-04-01 07:01:35 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mCase Load (0.2ms)[0m  SELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered cases/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:06:06 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:06:41 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:39: syntax error, unexpected keyword_case, expecting '|'
+'.freeze; @cases.each do |case| 
+                              ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:44: syntax error, unexpected '.', expecting keyword_when
+...t_buffer.append=( link_to case.name, case_path(case) );@outp...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:44: syntax error, unexpected ')', expecting keyword_when
+...k_to case.name, case_path(case) );@output_buffer.safe_append...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:47: syntax error, unexpected '.', expecting keyword_when
+...e;@output_buffer.append=( case.age );@output_buffer.safe_app...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:50: syntax error, unexpected '.', expecting keyword_when
+...e;@output_buffer.append=( case.gender );@output_buffer.safe_...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:66: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:67: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:69: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/cases/index.html.erb:39: syntax error, unexpected keyword_case, expecting '|'
+  app/views/cases/index.html.erb:44: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:44: syntax error, unexpected ')', expecting keyword_when
+  app/views/cases/index.html.erb:47: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:50: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:66: syntax error, unexpected keyword_end, expecting ')'
+  app/views/cases/index.html.erb:67: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/cases/index.html.erb:69: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:07:27 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  Rendered cases/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:4: syntax error, unexpected keyword_case, expecting '|'
+'.freeze; @cases.each do |case| 
+                              ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:9: syntax error, unexpected '.', expecting keyword_when
+...t_buffer.append=( link_to case.name, case_path(case) );@outp...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:9: syntax error, unexpected ')', expecting keyword_when
+...k_to case.name, case_path(case) );@output_buffer.safe_append...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:12: syntax error, unexpected '.', expecting keyword_when
+...e;@output_buffer.append=( case.age );@output_buffer.safe_app...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:15: syntax error, unexpected '.', expecting keyword_when
+...e;@output_buffer.append=( case.gender );@output_buffer.safe_...
+...                               ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/project/Trinity-Health/app/views/cases/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/cases/index.html.erb:4: syntax error, unexpected keyword_case, expecting '|'
+  app/views/cases/index.html.erb:9: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:9: syntax error, unexpected ')', expecting keyword_when
+  app/views/cases/index.html.erb:12: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:15: syntax error, unexpected '.', expecting keyword_when
+  app/views/cases/index.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+  app/views/cases/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/cases/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.4ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:07:45 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `article' for #<#<Class:0x007fcca40ce590>:0x007fcc99beaba0>):
+    19:           <%= truncate(c.diagnosis, length: 80) %>
+    20:         </div>
+    21:         <div class="case-actions">
+    22:           <%= link_to "Edit", edit_case_path(article), class: "btn btn-xs btn-primary"%>
+    23:           <%= link_to "Delete", case_path(article), method: :delete,  
+    24:                                 data: { confirm: "Are you sure you want to delete this case?" }, 
+    25:                                 class: "btn btn-xs btn-danger" %>
+  app/views/cases/index.html.erb:22:in `block in _app_views_cases_index_html_erb___456173455024991699_70258364730380'
+  app/views/cases/index.html.erb:4:in `_app_views_cases_index_html_erb___456173455024991699_70258364730380'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.8ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:07:52 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-0a234a2e7bbced6445ea3e20fce4e9a3fbab9805c285cb5d3dbe5990227b59e8.css?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 07:07:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:09:17 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2669ms (Views: 2668.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-b1bd4b5e77fcde9654b5f3e157a2436ba9e83eacf725790e7ccc730c2556265a.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:20 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:09:39 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.3ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (59.6ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2536ms (Views: 2534.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-c45da88aa8e5f72490410d355323c844c4183d2e040d98f1a7bc52e1b7c1fe67.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:42 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:09:50 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.3ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2692ms (Views: 2691.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cases.self-ef59bbdbf9284ee8d0bbef7542682b361ea3fe31a9a41f0e5006a427f0d55a5b.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/custom.self-566f058203d963386892137e9feba4b5bed8d240d167ae757c55b7290dd3857a.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/cases.self-25a34e1112881624c2b62e6cdceebea94de58d2d1546b9afc2d3300ed5b181c2.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/clinicians.self-dc448ff99ab6a0232bcce01b523d19b6cdfd96ec03cfd5ef4037919098ec7c28.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 192.77.239.230 at 2016-04-01 07:09:53 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/cases/8" for 192.77.239.230 at 2016-04-01 07:10:03 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT  "cases".* FROM "cases" WHERE "cases"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered cases/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:10:06 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[35mCase Load (0.5ms)[0m  SELECT "cases".* FROM "cases"
+  Rendered cases/index.html.erb within layouts/application (97.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 241ms (Views: 239.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/clinicians" for 192.77.239.230 at 2016-04-01 07:10:14 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for CliniciansController):
+  actionpack (4.2.6) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/clinicians" for 192.77.239.230 at 2016-04-01 07:10:15 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+AbstractController::ActionNotFound (The action 'index' could not be found for CliniciansController):
+  actionpack (4.2.6) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/cases" for 192.77.239.230 at 2016-04-01 07:10:16 +0000
+Cannot render console from 192.77.239.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CasesController#index as HTML
+  [1m[36mCase Load (0.2ms)[0m  [1mSELECT "cases".* FROM "cases"[0m
+  Rendered cases/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.2ms)
