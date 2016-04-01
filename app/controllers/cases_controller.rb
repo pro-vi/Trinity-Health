@@ -23,7 +23,6 @@ class CasesController < ApplicationController
       flash[:success] = "Case was succesfully created"
       redirect_to case_path(@case)
     else
-      flash[:notice] = "There was a problem creating the case"
       render :new
     end
   end
@@ -34,7 +33,6 @@ class CasesController < ApplicationController
       flash[:success] = "Case was succesfully updated"
       redirect_to case_path(@case)
     else
-      flash[:notice] = "There was a problem updating the case"
       render 'edit'
     end
   end
