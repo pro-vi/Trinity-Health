@@ -21,13 +21,15 @@ module NavigationHelpers
       
     when /^the create clinician page$/
       new_clinician_path
+    when /^the clinicians page$/
+      clinicians_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
     #   when /^(.*)'s profile page$/i
     #     user_profile_path(User.find_by_login($1))
-
+   
     else
       begin
         page_name =~ /^the (.*) page$/

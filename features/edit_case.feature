@@ -27,4 +27,13 @@ Scenario: Verify edits are saved
     When I fill in "Diagnosis" with "Cardiovascular Disease"
     And I press "Update Case"
     Then I should see "Cardiovascular Disease"
-    
+
+Scenario: Sad path
+    Given I am on the home page
+    And I follow "Kanye West"
+    When I follow "Edit"
+    Then I should be on the edit page for "Kanye West"
+    When I fill in "Diagnosis" with ""
+    And I press "Update Case"
+    Then I should see "Diagnosis can't be blank"
+
