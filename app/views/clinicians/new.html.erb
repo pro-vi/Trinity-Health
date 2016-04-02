@@ -1,14 +1,2 @@
-<h1>Create a new clinician</h1>
-<%= form_for @clinician do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %></br>
-  
-  <%= f.label :email %>
-  <%= f.text_field :email %></br>
-  
-  <%= f.label :specialty %>
-  <%= f.text_area:specialty %></br>
-  
-  <%= f.submit 'submit' %>
-  
-<% end %>
+<h1 class="text-center">Create a new clinician</h1>
+<%= render 'form' %>
