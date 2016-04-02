@@ -9,7 +9,7 @@ Scenario: Create profile
   And I fill in "Name" with "Dr. Patrick Soon Shiong"
   And I fill in "Email" with "p.s.shiong@ucsf.org"
   And I fill in "Specialty" with "Oncology"
-  And I press "submit"
+  And I press "Create Clinician"
   Then I should see "Dr. Patrick Soon Shiong"
   And I should see "Oncology"
 
@@ -18,6 +18,6 @@ Scenario: Sad Path
   And I fill in "Name" with "Dr. Patrick Soon Shiong"
   And I fill in "Email" with ""
   And I fill in "Specialty" with "Oncology"
-  And I press "submit"
+  And I press "Create Clinician"
   Then I should be on the clinicians page
   Then I should see "There was a problem creating the clinician"
