@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :clinicians
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -14,8 +15,13 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :cases
-  resources :clinicians
+  # resources :cases
+  resources :clinicians do
+    resources :cases
+    resources :patients
+  end
+  
+  match '/clinicians/sign_out' => "devise/sessions#destroy", via: [:get]
   # Example resource route with options:
   #   resources :products do
   #     member do

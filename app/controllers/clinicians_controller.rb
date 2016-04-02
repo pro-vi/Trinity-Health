@@ -5,6 +5,7 @@ class CliniciansController < ApplicationController
     
   def new
     @clinician = Clinician.new
+    render '/clinicians/sign_up'
   end
   
   def create
@@ -19,6 +20,11 @@ class CliniciansController < ApplicationController
   end
     
   def show
+    # if params[:id] == "sign_out"
+    #   puts "SDFS"
+    #   redirect_to destroy_clinician_session_path, :method => :delete
+    #   return
+    # end
     @clinician = Clinician.find(params[:id])
   end
 
