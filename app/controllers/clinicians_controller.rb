@@ -1,4 +1,7 @@
 class CliniciansController < ApplicationController
+  before_action :authenticate_clinician!
+  
+  
   def clinician_params    
     params.require(:clinician).permit(:name, :email, :specialty)
   end

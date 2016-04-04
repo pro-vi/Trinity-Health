@@ -9,7 +9,11 @@ Rails.application.routes.draw do
   root 'pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
-
+  # devise_scope :clinician do get "/clinicians/" => "some_devise_controller" end
+  devise_scope :clinician do
+    get "/clinicians/sign_in", to: "devise/sessions#new"
+    get "/clinicians/sign_out", to: "devise/sessions#destroy"
+  end
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
@@ -21,7 +25,7 @@ Rails.application.routes.draw do
     resources :patients
   end
   
-  match '/clinicians/sign_out' => "devise/sessions#destroy", via: [:get]
+  # match '/clinicians/sign_out' => "devise/sessions#destroy", via: [:get]
   # Example resource route with options:
   #   resources :products do
   #     member do
