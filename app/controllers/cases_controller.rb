@@ -2,15 +2,17 @@ class CasesController < ApplicationController
   
   def case_params    
     params.require(:case).permit(:name, :diagnosis, :age, :gender, 
-      :disease_characteristic, :treatment_history, :past_medical_history)
+      :disease_characteristic, :treatment_history, :past_medical_history, :id)
   end
   
   def index
-    @cases = Case.all
+    @cases = Clinician.find(params[:clinician_id]).cases
   end
   
   def new
-    @case = Case.new
+    if clinician_signed_in?
+      @case = current_clinician.cases.build
+    end
   end
   
   def edit
