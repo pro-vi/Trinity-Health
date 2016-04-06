@@ -6,7 +6,7 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div class="well well-lg">
         <div class="case-name">
-          Name: <%= link_to c.name, clinician_case_path(:clinician_id, :id) %>
+          Name: <%= link_to c.name, clinician_case_path(current_clinician.id, c.id) %>
         </div>
         <div class="case-age">
           Age: <%= c.age %>

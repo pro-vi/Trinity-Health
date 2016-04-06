@@ -10,4 +10,12 @@ class ApplicationController < ActionController::Base
     # devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
     devise_parameter_sanitizer.for(:sign_up)  << :name
   end
+  
+  def after_sign_in_path_for(clinician)
+    clinician_cases_path(current_clinician)
+  end
+  
+  def after_sign_out_path_for(clinician)
+    root_path
+  end
 end

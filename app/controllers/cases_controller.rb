@@ -16,7 +16,7 @@ class CasesController < ApplicationController
   end
   
   def edit
-    @case = Case.find(params[:id])
+    @case = Clinician.find(current_clinician.id).cases.find(params[:id])
   end
   
   def create
@@ -40,14 +40,14 @@ class CasesController < ApplicationController
   end
   
   def show
-    @case = Case.find(params[:id])
+    @case = Clinician.find(params[:clinician_id]).cases.find(params[:id])
   end
   
   def destroy
-    @case = Case.find(params[:id])
+    @case = Clinician.find(params[:clinician_id].id).cases.find(params[:id])
     @case.destroy
     flash[:success] = "Case was succesfully deleted"
-    redirect_to cases_path
+    redirect_to clinician_cases_path(params[:clinician_id])
   end
 
 end
