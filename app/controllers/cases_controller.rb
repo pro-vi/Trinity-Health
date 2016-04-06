@@ -33,7 +33,7 @@ class CasesController < ApplicationController
     @case = Case.find(params[:id])
     if @case.update(case_params)
       flash[:success] = "Case was succesfully updated"
-      redirect_to case_path(@case)
+      redirect_to clinician_case_path(@case)
     else
       render 'edit'
     end
