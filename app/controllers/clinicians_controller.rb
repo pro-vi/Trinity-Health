@@ -2,6 +2,10 @@ class CliniciansController < ApplicationController
   def clinician_params    
     params.require(:clinician).permit(:name, :email, :specialty)
   end
+  
+  def index
+    @clinicians = Clinician.all
+end
     
   def new
     @clinician = Clinician.new
