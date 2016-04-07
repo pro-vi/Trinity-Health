@@ -11,25 +11,28 @@ class CasesController < ApplicationController
   
   def new
     if clinician_signed_in?
+      @clinician = current_clinician
       @case = current_clinician.cases.build
     end
   end
   
   def edit
-    @case = Clinician.find(current_clinician.id).cases.find(params[:id])
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:id])
   end
   
   def create
     @case = Case.new(case_params)
     if @case.save
       flash[:success] = "Case was succesfully created"
-      redirect_to case_path(@case)
+      redirect_to clinician_case_path(params[:clinician_id], @case.id)
     else
       render :new
     end
   end
   
   def update
+    # @clinician = Clinician.find(current_clinician.id)
     @case = Case.find(params[:id])
     if @case.update(case_params)
       flash[:success] = "Case was succesfully updated"

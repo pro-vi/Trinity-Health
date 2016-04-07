@@ -2,7 +2,7 @@
 
 <div class='row'>
   <div class='col-xs-12'>
-    <%= form_for(@case, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+    <%= form_for([@clinician, @case], :html => {class: "form-horizontal", role: "form"}) do |f| %>
       <div class="form-group">
         <div class="control-label col-sm-2">
           <%= f.label :name %>
@@ -33,6 +33,22 @@
         </div>
         <div class="col-sm-8">
           <%= f.text_area :diagnosis, rows: 10, class: "form-control", placeholder: "Diagnosis of patient" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :treatment_history %>
+        </div>
+        <div class="col-sm-8">
+          <%= f.text_area :treatment_history, rows: 10, class: "form-control", placeholder: "Patient's Treatment History" %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :past_medical_history %>
+        </div>
+        <div class="col-sm-8">
+          <%= f.text_area :past_medical_history, rows: 10, class: "form-control", placeholder: "Patient's past medical history" %>
         </div>
       </div>
       <div class="form-group">

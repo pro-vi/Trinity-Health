@@ -25,6 +25,8 @@ Rails.application.routes.draw do
     resources :patients
   end
   
+  # resources :cases
+  
   # match '/clinicians/sign_out' => "devise/sessions#destroy", via: [:get]
   # Example resource route with options:
   #   resources :products do
