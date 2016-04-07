@@ -1,0 +1,8 @@
+<h1>Add new note for Case <%= params[:case_id]%></h1>
+<%= form_tag("/", method: "get") do %>
+  <%= label_tag(:subject, "Subject") %>
+  <%= text_field_tag(:subject) %>
+  <%= label_tag(:note_text, "Note") %>
+  <%= text_field_tag(:note_text) %>
+  <%= submit_tag("Make a Note!") %>
+<% end %>

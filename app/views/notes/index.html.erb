@@ -1,0 +1,7 @@
+<h1> Case <%=@case.id%> notes</h1>
+  <% @notes.each do |note|%>
+    <%= note.subject %>
+    <%= note.note_text%>
+  <% end%>
+
+<%= link_to "Add Note", new_case_note_path(@case), class: "btn btn-xs btn-primary"%>
