@@ -39,6 +39,7 @@ class CasesController < ApplicationController
   
   def show
     @case = Case.find(params[:id])
+    @notes = @case.notes 
   end
   
   def destroy

@@ -6,7 +6,7 @@ Feature: Add Note
   
   Given the following clinicians exists:
     | Name              | Email             |   Password      | Confirm Password    | id |
-    | Dr. Sanjay Gupta  | gupta@ucsf.org    |  sunjaygupta    |     sunjaygupta     | 15 | 
+    | Sanjay Gupta  | gupta@ucsf.org    |  sunjaygupta    |     sunjaygupta     | 15 | 
     
   Given the following cases exist:
      | Name              | Diagnosis    | id |
@@ -17,7 +17,7 @@ Feature: Add Note
     |15 |      15      |    15   |
     
   Scenario: Add a note
-    Given that Sanjay Gupta is logged in
+    Given "Sanjay Gupta" is logged in
     Then I should see "John Doe"
     And I follow "John Doe"
     Then I should see "Notes"
