@@ -14,3 +14,8 @@
     <%= link_to "Add Note", new_note_path(), class: "btn btn-xs btn-primary"%>
  </div>
 </div>
+<div class = "notes">
+  <%@notes.each do |note|%>
+    <%= note.subject%>
+    <%= note.note_text%>
+</div>
