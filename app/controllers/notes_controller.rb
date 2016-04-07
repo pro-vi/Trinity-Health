@@ -4,6 +4,7 @@ class NotesController < ApplicationController
   end
 
   def new
+
   end
 
   def edit
@@ -28,7 +29,6 @@ class NotesController < ApplicationController
       case_id = params[:case_id]
       redirect_to case_path(case_id)
     else
-      if
       flash[:error] = "Please fill in note"
       redirect_to edit_case_note_path
     end 
