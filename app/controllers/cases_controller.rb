@@ -17,8 +17,13 @@ class CasesController < ApplicationController
   end
   
   def edit
-    @clinician = Clinician.find(params[:clinician_id])
-    @case = @clinician.cases.find(params[:id])
+    if params[:clinician_id] != current_clinician.id
+      flash[:warning] = "You cannot edit cases you are not a part of"
+      redirect_to clinician_cases_path(current_clinician.id)
+    else
+      @clinician = Clinician.find(params[:clinician_id])
+      @case = @clinician.cases.find(params[:id])
+    end
   end
   
   def create
@@ -47,7 +52,8 @@ class CasesController < ApplicationController
   end
   
   def destroy
-    @case = Clinician.find(params[:clinician_id].id).cases.find(params[:id])
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = Case.find(params[:id])
     @case.destroy
     flash[:success] = "Case was succesfully deleted"
     redirect_to clinician_cases_path(params[:clinician_id])
