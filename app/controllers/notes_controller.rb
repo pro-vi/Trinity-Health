@@ -8,13 +8,13 @@ class NotesController < ApplicationController
 
   def edit
     @note = Note.find(params[:id])  
-    @case = Case.find_by(params[:case_id])
+    @case = Case.find(params[:case_id])
   end
 
   def create
     @note = Note.new(note_params)
     if @note.save
-      case_id = params[:case_id])
+      case_id = params[:case_id]
       redirect_to case_path(case_id)
     else
       flash[:error] = "Please fill in note"
@@ -25,7 +25,7 @@ class NotesController < ApplicationController
   def update
     @note = Note.new(note_params)
     if @note.save
-      case_id = params[:case_id])
+      case_id = params[:case_id]
       redirect_to case_path(case_id)
     else
       if
