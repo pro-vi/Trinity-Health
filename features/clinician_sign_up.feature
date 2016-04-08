@@ -9,16 +9,15 @@ Scenario: Sign Up
   And I fill in "Name" with "Dr. Phillip Frost"
   And I fill in "Email" with "frost@ucsf.org"
   And I fill in "Password" with "password"
-  And I fill in "Confirm Password" with "password"
+  And I fill in "Password confirmation" with "password"
   And I press "Sign Up"
   Then I should see "You've successfully signed up"
-
 
 Scenario: Sad Path
   When I go to the clinician sign up page
   And I fill in "Name" with "Dr. Phillip Frost"
   And I fill in "Email" with "frost@ucsf.org"
   And I fill in "Password" with "passwor"
-  And I fill in "Confirm Password" with "passwor"
+  And I fill in "Password confirmation" with "passwor"
   And I press "Sign Up"
-  Then I should see "Error"
+  Then I should see "Password is too short"
