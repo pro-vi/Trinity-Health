@@ -5,13 +5,6 @@ Feature: Add Note
   
 Background: clinicians and cases exist
   
-<<<<<<< HEAD
-  Given the following clinicians exists:
-    | Name              | Email             |   Password      | Confirm Password    | id |
-    | Sanjay Gupta  | gupta@ucsf.org    |  sunjaygupta    |     sunjaygupta     | 15 | 
-    
-  Given the following cases exist:
-=======
   Given I am on the log in page
   When I fill in the following:
     | Name                  | Sanjay Gupta   |
@@ -21,23 +14,9 @@ Background: clinicians and cases exist
   And I press "Sign up"
   
   Given "Sanjay Gupta" creates the following cases:
->>>>>>> 6d348d075903e82541294b67b3fe37626197a79f
      | Name              | Diagnosis    | id |
      | John Doe          | Cancer       | 15 |
     
-<<<<<<< HEAD
-  Scenario: Add a note
-    Given "Sanjay Gupta" is logged in
-    Then I should see "John Doe"
-    And I follow "John Doe"
-    Then I should see "Notes"
-    And I should follow "Notes"
-    Then I should see "Add Note"
-    And I follow "Add Note"
-    Then I fill in "Subject" with "Prognosis update"
-    Then I fill in "Note" with "Successful surgery"
-    Then I press "Submit"
-=======
 Scenario: Add a note
   Given I am on the case page for "John Doe"
   Then I should see "Notes"
@@ -49,7 +28,6 @@ Scenario: Add a note
   And I press "Submit"
   Then I should be on the note page for "John Doe"
   And I should see "Successful surgery"
->>>>>>> 6d348d075903e82541294b67b3fe37626197a79f
     
 Scenario: Add a note sad path
   Given I am on the case page for "John Doe"
@@ -58,8 +36,3 @@ Scenario: Add a note sad path
   When I fill in "Subject" with "Prognosis update"
   And I press "Submit"
   Then I should see "Please fill in note"
-    
-    
-    
-  
-    
