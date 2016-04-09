@@ -13,13 +13,13 @@ Scenario: Sign In
   When I go to the clinician sign in page
   And I fill in "Email" with "gupta@ucsf.org"
   And I fill in "Password" with "sanjaygupta"
-  And I press "Sign In"
-  Then I should see "Cases"
-
+  And I press "Log In"
+  Then I should see "Signed in successfully"
+  And I should be on my cases page
 
 Scenario: Sign in Sad Path
   When I go to the clinician sign up page
   And I fill in "Email" with "carson@ucsf.org"
   And I fill in "Password" with "carson"
-  And I press "Sign In"
-  Then I should see "Error"
+  And I press "Log In"
+  Then I should see "Invalid email or password"

@@ -23,6 +23,12 @@ module NavigationHelpers
       new_clinician_path
     when /^the clinicians page$/
       clinicians_path
+      
+    when /^the log in page$/
+      new_clinician_session
+      
+    when /^the clinician sign up page$/
+      new_clinician_registration
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

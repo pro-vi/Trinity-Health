@@ -9,6 +9,13 @@ Given /the following cases exist/ do |cases_table|
   end
 end
 
+Given /"(.*)" creates the following cases/ do |n, cases_table|
+  doc = Clinician.where(name: n)
+  cases_table.hashes.each do |c|
+    doc.cases.create(c)
+  end
+end
+
 Then /^I should be on "(.*)"'s case page$/ do |name|
   c = Case.find_by name: name
   id = c.id
