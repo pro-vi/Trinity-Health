@@ -22,7 +22,6 @@ Rails.application.routes.draw do
   # resources :cases
   resources :clinicians do
     resources :cases
-    resources :patients
   end
   
   # resources :cases
