@@ -1,21 +1,13 @@
 class CasesController < ApplicationController
+  before_action :authenticate_clinician!
   
   def case_params    
     params.require(:case).permit(:name, :diagnosis, :age, :gender, 
-      :disease_characteristic, :treatment_history, :past_medical_history, :id, clinician_attributes: [:name, :email, :specialty])
+      :disease_characteristic, :treatment_history, :past_medical_history, :id, clinician_attributes: [:name, :email, :speciality])
   end
   
   def index
     @clinician_id = params[:clinician_id].to_i
-    @clinician = Clinician.find(params[:clinician_id])
-    @cases = @clinician.cases
-  end
-  
-  def new
-    if params[:clinician_id].to_i != current_clinician.id
-      flash[:warning] = "Cannot create case for another clinician"
-      redirect_to clinician_cases_path(current_clinician.id)
-    end
     @allowed = @clinician_id == current_clinician.id
     @cases = Clinician.find(@clinician_id).cases
   end
@@ -44,19 +36,12 @@ class CasesController < ApplicationController
   end
   
   def create
-    @clinician = Clinician.find(params[:clinician_id])
-    @case = @clinician.cases.build(case_params)
-    if @case.save
-      flash[:success] = "Case was succesfully created"
-      redirect_to clinician_case_path(@clinician.id, @case.id)
-    end
     @clinician_id = params[:clinician_id].to_i
     @clinician = Clinician.find(@clinician_id)
     @case = @clinician.cases.create(case_params)
     if @case
       flash[:success] = "Case was succesfully created"
       redirect_to clinician_case_path(@clinician_id, @case.id)
->>>>>>> a75002204177a1b9bdafdb3b95f099d787bf9193
     else
       render :new
     end
@@ -76,16 +61,10 @@ class CasesController < ApplicationController
   end
   
   def show
-<<<<<<< HEAD
-    @allowed = params[:clinician_id].to_i == current_clinician.id
-    @clinician = Clinician.find(params[:clinician_id])
-    @case = @clinician.cases.find(params[:id])
-=======
     @clinician_id = params[:clinician_id].to_i
     @case_id = params[:id].to_i
     @allowed = @clinician_id == current_clinician.id
     @case = Case.find(@case_id)
->>>>>>> a75002204177a1b9bdafdb3b95f099d787bf9193
   end
   
   def destroy
