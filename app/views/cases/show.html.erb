@@ -14,17 +14,17 @@
                             class: "btn btn-xs btn-danger" %>
     </div><!-- /.case-actions -->
   </div>
-  
-  <div class="well col-xs-3 col-xs-offset-1">
-    <h4><strong>Members</strong></h4>
-    <div class="collaborators">
-      <ul>
-        <% @case.clinicians.each do |clinician| %>
-        <li><%= link_to clinician.name, clinician_path(clinician) %></li>
-        <% end %>
-      </ul>
-    </div><!-- /.collaborators -->
-    <%= link_to "Add collaborator", add_collaborator_path, { class: "btn btn-primary" } %>
-  </div>
-  
+  <div id="collaborator-column">
+    <div class="well col-xs-3 col-xs-offset-1">
+      <h4><strong>Members</strong></h4>
+      <div class="collaborators">
+        <ul>
+          <% @case.clinicians.each do |clinician| %>
+          <li><%= link_to clinician.name, clinician_path(clinician) %></li>
+          <% end %>
+        </ul>
+      </div><!-- /.collaborators -->
+      <%= link_to "Add collaborator", add_collaborator_path, class: "btn btn-primary", :id => 'add-collaborator' %>
+    </div>
+ </div>
 </div><!-- /.row -->
