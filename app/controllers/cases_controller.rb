@@ -6,7 +6,6 @@ class CasesController < ApplicationController
   end
   
   def index
-    @allowed = params[:clinician_id].to_i == current_clinician.id
     @clinician_id = params[:clinician_id].to_i
     @clinician = Clinician.find(params[:clinician_id])
     @cases = @clinician.cases
@@ -17,22 +16,30 @@ class CasesController < ApplicationController
       flash[:warning] = "Cannot create case for another clinician"
       redirect_to clinician_cases_path(current_clinician.id)
     end
+    @allowed = @clinician_id == current_clinician.id
+    @cases = Clinician.find(@clinician_id).cases
+  end
+  
+  def new
+    @clinician_id = params[:clinician_id].to_i
     if clinician_signed_in?
-      @clinician = Clinician.find(params[:clinician_id])
+      @clinician = Clinician.find(@clinician_id)
       @case = @clinician.cases.new
     else
       flash[:warning] = "You'll need to login first"
-      redirect_to new_clinician_session_path()
+      redirect_to new_clinician_session_path
     end
   end
   
   def edit
-    if params[:clinician_id].to_i != current_clinician.id
+    @clinician_id = params[:clinician_id].to_i
+    @case_id = params[:id].to_i
+    if @clinician_id != current_clinician.id
       flash[:warning] = "You cannot edit cases you are not a part of"
-      redirect_to clinician_cases_path(params[:clinician_id])
+      redirect_to clinician_cases_path(@clinician_id)
     else
-      @clinician = Clinician.find(params[:clinician_id])
-      @case = @clinician.cases.find(params[:id])
+      @clinician = Clinician.find(@clinician_id)
+      @case = Case.find(@case_id)
     end
   end
   
@@ -42,40 +49,56 @@ class CasesController < ApplicationController
     if @case.save
       flash[:success] = "Case was succesfully created"
       redirect_to clinician_case_path(@clinician.id, @case.id)
+    end
+    @clinician_id = params[:clinician_id].to_i
+    @clinician = Clinician.find(@clinician_id)
+    @case = @clinician.cases.create(case_params)
+    if @case
+      flash[:success] = "Case was succesfully created"
+      redirect_to clinician_case_path(@clinician_id, @case.id)
+>>>>>>> a75002204177a1b9bdafdb3b95f099d787bf9193
     else
       render :new
     end
   end
   
   def update
+    @clinician_id = params[:clinician_id].to_i
+    @case_id = params[:id].to_i
     @clinician = Clinician.find(current_clinician.id)
-    @case = Case.find(params[:id])
+    @case = Case.find(@case_id)
     if @case.update(case_params)
       flash[:success] = "Case was succesfully updated"
-      redirect_to clinician_case_path(params[:clinician_id], @case.id)
+      redirect_to clinician_case_path(@clinician_id, @case.id)
     else
       render 'edit'
     end
   end
   
   def show
+<<<<<<< HEAD
     @allowed = params[:clinician_id].to_i == current_clinician.id
     @clinician = Clinician.find(params[:clinician_id])
     @case = @clinician.cases.find(params[:id])
+=======
+    @clinician_id = params[:clinician_id].to_i
+    @case_id = params[:id].to_i
+    @allowed = @clinician_id == current_clinician.id
+    @case = Case.find(@case_id)
+>>>>>>> a75002204177a1b9bdafdb3b95f099d787bf9193
   end
   
   def destroy
-    if params[:clinician_id].to_i != current_clinician.id
+    @clinician_id = params[:clinician_id].to_i
+    @case_id = params[:id].to_i
+    if @clinician_id != current_clinician.id
       flash[:warning] = "You cannot delete cases you are not a part of"
-      redirect_to clinician_cases_path(current_clinician.id)
+      redirect_to clinician_cases_path(@clinician_id)
     else
-      @clinician = Clinician.find(params[:clinician_id])
-      puts @clinician
-      puts @clinician.cases.find(params[:id])
-      @case = @clinician.cases.find(params[:id])
+      @case = Case.find(@case_id)
       @case.destroy
       flash[:success] = "Case was succesfully deleted"
-      redirect_to clinician_cases_path(params[:clinician_id])
+      redirect_to clinician_cases_path(@clinician_id)
     end
   end
 
