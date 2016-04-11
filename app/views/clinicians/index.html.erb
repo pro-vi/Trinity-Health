@@ -15,6 +15,10 @@
         <div class="clinician-specialty">
           Specialty: <%= c.specialty %>
         </div>
+        <!-- the button used to select as collaborator, see case view -->
+        <div class="clinician-select">
+          <%= link_to "Select as collaborator", assign_collaborator_path(session[:case_id], c) , { class: "btn btn-sm btn-primary" } %>
+        </div>
       </div>
     </div>
   </div>

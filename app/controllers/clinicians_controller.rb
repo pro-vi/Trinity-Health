@@ -3,9 +3,14 @@ class CliniciansController < ApplicationController
     params.require(:clinician).permit(:name, :email, :specialty)
   end
   
+  def select_as_collaborator
+    #params[:collaborator] = @clinician
+    redirect_to :back, :collaborator => @clinician
+  end
+  
   def index
     @clinicians = Clinician.all
-end
+  end
     
   def new
     @clinician = Clinician.new

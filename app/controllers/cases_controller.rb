@@ -5,6 +5,18 @@ class CasesController < ApplicationController
       :disease_characteristic, :treatment_history, :past_medical_history)
   end
   
+  def assign_collaborator
+    @case = Case.find(params[:id])
+    collaborator = Clinician.find(params[:collaborator])
+    @case.clinicians << collaborator
+    redirect_to case_path(@case)
+  end
+  
+  def add_collaborator
+    session[:case_id] = params[:id]
+    redirect_to clinicians_path
+  end
+  
   def index
     @cases = Case.all
   end
