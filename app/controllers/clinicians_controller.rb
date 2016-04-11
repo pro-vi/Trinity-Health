@@ -2,8 +2,10 @@ class CliniciansController < ApplicationController
   before_action :authenticate_clinician!
   
   
+  
   def clinician_params    
-    params.require(:clinician).permit(:name, :email, :specialty)
+    params.require(:clinician).permit(:name, :email, :specialty, cases_attributes: [:name, :diagnosis, :age, :gender, 
+      :disease_characteristic, :treatment_history, :past_medical_history, :id])
   end
     
   def new

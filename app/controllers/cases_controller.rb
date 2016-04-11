@@ -2,16 +2,21 @@ class CasesController < ApplicationController
   
   def case_params    
     params.require(:case).permit(:name, :diagnosis, :age, :gender, 
-      :disease_characteristic, :treatment_history, :past_medical_history, :id)
+      :disease_characteristic, :treatment_history, :past_medical_history, :id, clinician_attributes: [:name, :email, :specialty])
   end
   
   def index
     @allowed = params[:clinician_id].to_i == current_clinician.id
     @clinician_id = params[:clinician_id].to_i
-    @cases = Clinician.find(params[:clinician_id]).cases
+    @clinician = Clinician.find(params[:clinician_id])
+    @cases = @clinician.cases
   end
   
   def new
+    if params[:clinician_id].to_i != current_clinician.id
+      flash[:warning] = "Cannot create case for another clinician"
+      redirect_to clinician_cases_path(current_clinician.id)
+    end
     if clinician_signed_in?
       @clinician = Clinician.find(params[:clinician_id])
       @case = @clinician.cases.new
@@ -33,10 +38,10 @@ class CasesController < ApplicationController
   
   def create
     @clinician = Clinician.find(params[:clinician_id])
-    @case = @clinician.cases.new(case_params)
+    @case = @clinician.cases.build(case_params)
     if @case.save
       flash[:success] = "Case was succesfully created"
-      redirect_to clinician_case_path(params[:clinician_id], @case.id)
+      redirect_to clinician_case_path(@clinician.id, @case.id)
     else
       render :new
     end
@@ -56,7 +61,7 @@ class CasesController < ApplicationController
   def show
     @allowed = params[:clinician_id].to_i == current_clinician.id
     @clinician = Clinician.find(params[:clinician_id])
-    @case = Case.find(params[:id])
+    @case = @clinician.cases.find(params[:id])
   end
   
   def destroy

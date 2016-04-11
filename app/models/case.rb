@@ -3,4 +3,5 @@ class Case < ActiveRecord::Base
     validates :diagnosis, presence: true
     has_many :clinicians, through: :patients
     has_many :patients
+    accepts_nested_attributes_for :clinicians
 end

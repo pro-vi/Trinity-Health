@@ -7,4 +7,5 @@ class Clinician < ActiveRecord::Base
     validates :email, presence: true
     has_many :cases, through: :patients
     has_many :patients
+    accepts_nested_attributes_for :cases
 end
