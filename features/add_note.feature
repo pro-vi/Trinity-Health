@@ -5,10 +5,6 @@ Feature: Add Note
   
 Background: clinicians and cases exist
   
-  Given the following clinicians exists:
-    | Name              | Email             |   Password      | Confirm Password    | id |
-    | Sanjay Gupta  | gupta@ucsf.org    |  sunjaygupta    |     sunjaygupta     | 15 | 
-    
   Given I am on the log in page
   When I fill in the following:
     | Name                  | Sanjay Gupta   |
