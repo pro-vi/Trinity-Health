@@ -8,4 +8,5 @@ class Clinician < ActiveRecord::Base
     has_many :cases, through: :patients
     has_many :patients
     accepts_nested_attributes_for :cases
+    has_many :notes
 end
