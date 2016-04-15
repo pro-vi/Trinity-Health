@@ -4,7 +4,9 @@ class NotesController < ApplicationController
   end
 
   def new
-    @note = Note.new()
+    puts "HEEEE"
+    @case = Case.find(params[:case_id])
+    @note = @case.notes.new
   end
 
   def edit
@@ -13,10 +15,13 @@ class NotesController < ApplicationController
   end
 
   def create
-    @note = Note.new(note_params)
+    puts "CREATE"
+    @case = Case.find(params[:case_id])
+    @note = @case.notes.new(note_params)
     if @note.save
+      flash[:success] = "Note was created successfully"
       case_id = params[:case_id]
-      redirect_to case_path(case_id)
+      redirect_to case_notes_path(case_id)
     else
       flash[:error] = "Please fill in note"
       redirect_to new_case_note_path
@@ -24,12 +29,14 @@ class NotesController < ApplicationController
   end
 
   def update
-    @note = Note.new(note_params)
-    if @note.save
+    @case = Case.find(params[:case_id])
+    @note = Note.find(params[:id])
+    if @note.update(note_params)
+      flash[:success] = "Note edit was successful"
       case_id = params[:case_id]
-      redirect_to case_path(case_id)
+      redirect_to case_notes_path(case_id)
     else
-      flash[:error] = "Please fill in note"
+      flash[:error] = "Fields cannot be blank"
       redirect_to edit_case_note_path
     end 
   end

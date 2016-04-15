@@ -4,4 +4,5 @@ class Case < ActiveRecord::Base
     has_many :clinicians, through: :patients
     has_many :patients
     has_many :notes
+
 end

@@ -1,2 +1,15 @@
-<h1>NotesController#edit</h1>
-<p>Find me in app/views/notes_controller/edit.html.erb</p>
+<h1>Edit note for Case <%= params[:case_id]%></h1>
+<%= form_for([@case, @note], url: {action: "update"}, html:{class: "edit_form"}) do |f| %>
+  <%= f.label :subject%>
+  <%= f.text_field :subject %>
+
+  <div>
+  <%= f.label :note_text%>
+  </div>
+
+  <div>
+  <%= f.text_area :note_text, size: "60x12" %>
+  </div>
+  <%= f.submit "Update" %>
+<% end %>
+
