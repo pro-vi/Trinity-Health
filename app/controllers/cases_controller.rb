@@ -38,8 +38,8 @@ class CasesController < ApplicationController
   def create
     @clinician_id = params[:clinician_id].to_i
     @clinician = Clinician.find(@clinician_id)
-    @case = @clinician.cases.create(case_params)
-    if @case
+    @case = @clinician.cases.new(case_params)
+    if @case.save
       flash[:success] = "Case was succesfully created"
       redirect_to clinician_case_path(@clinician_id, @case.id)
     else
