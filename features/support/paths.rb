@@ -16,20 +16,35 @@ module NavigationHelpers
     when /^the home\s?page$/
       cases_path
 
-    when /^the edit page for "(.*)"$/
-      edit_case_path(Case.find_by_name($1))
+    when /^"(.*)"'s edit page for "(.*)"$/
+      edit_clinician_case_path(Clinician.find_by_name($1), Case.find_by_name($2))
       
     when /^the create clinician page$/
       new_clinician_path
+      
     when /^the clinicians page$/
       clinicians_path
       
     when /^the log in page$/
-      new_clinician_session
+      new_clinician_session_path
       
     when /^the clinician sign up page$/
-      new_clinician_registration
+      new_clinician_registration_path
+  
+    when /^the new case page for "(.*)"$/
+      new_clinician_case_path(Clinician.find_by_email($1))
+    
+    when /^"(.*)"'s case page for "(.*)"$/
+      clinician_case_path(Clinician.find_by_name($1), Case.find_by_name($2))
+      
+    when /^"(.*)"'s note page for "(.*)"$/
+      clinician_case_notes_path(Clinician.find_by_name($1), Case.find_by_name($2))
 
+    when /^"(.*)"'s edit "(.*)" note for "(.*)"$/
+      edit_clinician_case_note_path(Clinician.find_by_name($1), Case.find_by_name($3), Note.find_by_subject($2))
+      
+    when /^the cases page for "(.*)"$/
+      clinician_cases_path(Clinician.find_by_name($1))
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

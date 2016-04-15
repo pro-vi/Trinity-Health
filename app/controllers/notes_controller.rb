@@ -4,45 +4,51 @@ class NotesController < ApplicationController
   end
 
   def new
-    puts "HEEEE"
-    @case = Case.find(params[:case_id])
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:case_id])
     @note = @case.notes.new
   end
 
   def edit
-    @note = Note.find(params[:id])  
-    @case = Case.find(params[:case_id])
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:case_id])
+    @note = @case.notes.find(params[:id])  
   end
 
   def create
-    puts "CREATE"
-    @case = Case.find(params[:case_id])
+    case_id = params[:case_id]
+    clinician_id = params[:clinician_id]
+    @clinician = Clinician.find(clinician_id)
+    @case = @clinician.cases.find(case_id)
     @note = @case.notes.new(note_params)
     if @note.save
       flash[:success] = "Note was created successfully"
-      case_id = params[:case_id]
-      redirect_to case_notes_path(case_id)
+      redirect_to clinician_case_notes_path(clinician_id, case_id)
     else
       flash[:error] = "Please fill in note"
-      redirect_to new_case_note_path
+      redirect_to new_clinician_case_note_path(clinician_id, case_id)
     end 
   end
 
   def update
-    @case = Case.find(params[:case_id])
-    @note = Note.find(params[:id])
+    case_id = params[:case_id]
+    clinician_id = params[:clinician_id]
+    note_id = params[:id]
+    @clinician = Clinician.find(clinician_id)
+    @case = @clinician.cases.find(case_id)
+    @note = @case.notes.find(note_id)
     if @note.update(note_params)
       flash[:success] = "Note edit was successful"
-      case_id = params[:case_id]
-      redirect_to case_notes_path(case_id)
+      redirect_to clinician_case_notes_path(clinician_id, case_id)
     else
       flash[:error] = "Fields cannot be blank"
-      redirect_to edit_case_note_path
+      redirect_to edit_clinician_case_note_path(clinician_id, case_id, note_id)
     end 
   end
 
   def index
-    @case = Case.find(params[:case_id]) 
-    @notes = Note.where(:case_id => params[:case_id]) 
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:case_id]) 
+    @notes = @case.notes
   end 
 end

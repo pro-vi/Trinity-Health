@@ -1,7 +1,7 @@
-<h1> Case <%=@case.id%> notes</h1>
-<h1 class="text-center">Cases</h1>
+<h1><%=@case.name%></h1>
+<h1 class="text-center">Notes</h1>
 
-<%= link_to "Add Note", new_case_note_path(@case), class: "btn btn-xs btn-primary" %>
+<%= link_to "Add Note", new_clinician_case_note_path(@clinician, @case), class: "btn btn-xs btn-primary" %>
 <% @notes.each do |c| %>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
@@ -13,11 +13,10 @@
           Body: <%= c.note_text%> 
         </div>
         <div class="case-actions">
-          <%= link_to "Edit", edit_case_note_path(@case, c), class: "btn btn-xs btn-primary"%>
+          <%= link_to "Edit", edit_clinician_case_note_path(@clinician, @case, c), class: "btn btn-xs btn-primary"%>
         </div>
       </div>
     </div>
   </div>
 
 <% end %>
-~          

@@ -20,7 +20,7 @@
                             class: "btn btn-xs btn-danger" %>
     <% end %>
 
-    <%= link_to "Notes", case_notes_path(@case), class: "btn btn-xs btn-primary"%>
+    <%= link_to "Notes", clinician_case_notes_path(@clinician_id, @case.id), class: "btn btn-xs btn-primary"%>
  </div>
   
 

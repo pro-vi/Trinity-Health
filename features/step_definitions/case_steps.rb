@@ -10,7 +10,7 @@ Given /the following cases exist/ do |cases_table|
 end
 
 Given /"(.*)" creates the following cases/ do |n, cases_table|
-  doc = Clinician.where(name: n)
+  doc = Clinician.find_by_name(n)
   cases_table.hashes.each do |c|
     doc.cases.create(c)
   end

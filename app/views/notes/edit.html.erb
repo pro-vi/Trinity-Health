@@ -1,5 +1,5 @@
 <h1>Edit note for Case <%= params[:case_id]%></h1>
-<%= form_for([@case, @note], url: {action: "update"}, html:{class: "edit_form"}) do |f| %>
+<%= form_for([@clinician, @case, @note], url: {action: "update"}, html:{class: "edit_form"}) do |f| %>
   <%= f.label :subject%>
   <%= f.text_field :subject %>
 
