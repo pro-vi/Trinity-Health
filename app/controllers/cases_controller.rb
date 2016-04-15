@@ -6,7 +6,11 @@ class CasesController < ApplicationController
   end
   
   def index
-    @cases = Case.all
+    if params[:search].present?
+      @cases = Case.search(params[:search])
+    else
+      @cases = Case.all
+    end
   end
   
   def new
@@ -47,5 +51,5 @@ class CasesController < ApplicationController
     flash[:success] = "Case was succesfully deleted"
     redirect_to cases_path
   end
-
+  
 end

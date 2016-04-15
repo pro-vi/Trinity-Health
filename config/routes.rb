@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   #   resources :products
   resources :cases
   resources :clinicians
+  # post 'cases/search' => 'cases#search', as: 'search_cases'
   # Example resource route with options:
   #   resources :products do
   #     member do
