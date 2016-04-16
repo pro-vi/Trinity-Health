@@ -3,8 +3,10 @@
 <head>
   <title>TrinityHealth</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<!--  <#%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
+<%= javascript_include_tag 'application' %>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<%= csrf_meta_tags %>
 </head>
 <body>
 

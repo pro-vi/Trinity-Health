@@ -36,6 +36,9 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  
+  get 'clinicians/:clinician_id/cases/:id/add_collaborator' => 'cases#add_collaborator', as: :add_collaborator
+  get 'clinicians/:clinician_id/cases/:id/assign_collaborator/:collaborator' => 'cases#assign_collaborator', as: :assign_collaborator
 
   # Example resource route with sub-resources:
   #   resources :products do

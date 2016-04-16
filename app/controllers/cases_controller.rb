@@ -6,6 +6,20 @@ class CasesController < ApplicationController
       :disease_characteristic, :treatment_history, :past_medical_history, :id, clinician_attributes: [:name, :email, :speciality])
   end
   
+  def assign_collaborator
+    session.delete(:case_id)
+    @clinician = Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:id])
+    collaborator = Clinician.find(params[:collaborator])
+    @case.clinicians << collaborator
+    redirect_to clinician_case_path(@clinician, @case)
+  end
+  
+  def add_collaborator
+    session[:case_id] = params[:id]
+    redirect_to clinicians_path
+  end
+  
   def index
     @clinician_id = params[:clinician_id].to_i
     @allowed = @clinician_id == current_clinician.id
