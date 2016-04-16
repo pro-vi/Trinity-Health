@@ -17,7 +17,9 @@
         </div>
         <!-- the button used to select as collaborator, see case view -->
         <div class="clinician-select">
+          <% if session[:case_id] %>
           <%= link_to "Select as collaborator", assign_collaborator_path(session[:case_id], c) , { class: "btn btn-sm btn-primary" } %>
+          <% end %>
         </div>
       </div>
     </div>

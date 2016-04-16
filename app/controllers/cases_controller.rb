@@ -6,6 +6,7 @@ class CasesController < ApplicationController
   end
   
   def assign_collaborator
+    session.delete(:case_id)
     @case = Case.find(params[:id])
     collaborator = Clinician.find(params[:collaborator])
     @case.clinicians << collaborator
