@@ -1,15 +1,11 @@
-<h3><%= @clinician.name %></h3>
-<ul id="clinician_menu">
 
-</ul>
-<ul id="email">
-  <p>Email: <%= @clinician.email %></p>
-</ul>
-
-</ul>
-<ul id="specialty">
-  <p>Specialty: <%= @clinician.specialty %></p>
-</ul>
-
-
-<%= link_to "Back to case list", cases_path %>
+<h2 class="text-center">Clinician: <strong><%= @clinician.name %></strong></h3>
+<div class="well col-xs-8 col-xs-offset-2">
+  
+  <h4><strong>Email: <%= @clinician.email %></strong></h4>
+  <h4><strong>Specialty:</strong></h4>
+  <%= simple_format(@clinician.specialty) %>
+  <div class="clinician-action">
+    <%= link_to "Back to list", clinicians_path, class: "btn btn-xs btn-success" %>
+ </div>
+</div>

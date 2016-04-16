@@ -1,0 +1,27 @@
+<h1 class="text-center">Clinicians</h1>
+
+<% @clinicians.each do |c| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <div class="clinician-name">
+          Name: <%= link_to c.name, clinician_path(c) %>
+        </div>
+
+        <div class="clinician-email">
+          Email: <%= c.email %>
+        </div>
+        <div class="clinician-specialty">
+          Specialty: <%= c.specialty %>
+        </div>
+        <!-- the button used to select as collaborator, see case view -->
+        <div class="clinician-select">
+          <% if @case %>
+          <%= link_to "Select as collaborator", assign_collaborator_path(@clinician, @case, c) , { class: "btn btn-sm btn-primary" } %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<% end %>

@@ -27,10 +27,22 @@ ActiveRecord::Schema.define(version: 20160407023824) do
   end
 
   create_table "clinicians", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "specialty"
+    t.string   "name"
+    t.string   "email"
+    t.string   "specialty"
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "clinicians", ["email"], name: "index_clinicians_on_email", unique: true
+  add_index "clinicians", ["reset_password_token"], name: "index_clinicians_on_reset_password_token", unique: true
 
   create_table "notes", force: :cascade do |t|
     t.integer  "clinician_id"
@@ -44,6 +56,11 @@ ActiveRecord::Schema.define(version: 20160407023824) do
   end
 
   create_table "patients", force: :cascade do |t|
+    t.integer "clinician_id"
+    t.integer "case_id"
   end
+
+  add_index "patients", ["case_id"], name: "index_patients_on_case_id"
+  add_index "patients", ["clinician_id"], name: "index_patients_on_clinician_id"
 
 end
