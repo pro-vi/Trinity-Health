@@ -37,7 +37,9 @@
           <% end %>
         </ul>
       </div><!-- /.collaborators -->
-      <%= link_to "Add collaborator", add_collaborator_path(@clinician_id, @case.id), class: "btn btn-primary", :id => 'add-collaborator' %>
+      <% if @allowed %>
+        <%= link_to "Add collaborator", add_collaborator_path(@clinician_id, @case.id), class: "btn btn-primary", :id => 'add-collaborator' %>
+      <% end %>
     </div>
  </div>
 </div><!-- /.row -->

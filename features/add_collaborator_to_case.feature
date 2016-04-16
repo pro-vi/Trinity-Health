@@ -2,16 +2,17 @@ Feature: Add collaborator
   As a collaborating physician
   I want to be add collaborators to a specific cases
   so that I can share case information with them and receive their input on treatment options
-  
-  Given I am on the log in page
+
+Background: Set up Clinicians
+  Given I am on the clinician sign up page
   When I fill in the following:
-    | Name                  | Hippocrates    |
-    | Email                 | hippo@ucsf.org |
-    | Password              | hippocrates    |
-    | Password confirmation | hippocrates    |
+    | Name                  | Ben Carson      |
+    | Email                 | carson@ucsf.org |
+    | Password              | bencarson       |
+    | Password confirmation | bencarson       |
   And I press "Sign up"
-  
-  Given I am on the log in page
+  And I log out
+  Given I am on the clinician sign up page
   When I fill in the following:
     | Name                  | Sanjay Gupta   |
     | Email                 | gupta@ucsf.org |
@@ -19,25 +20,21 @@ Feature: Add collaborator
     | Password confirmation | sunjaygupta    |
   And I press "Sign up"
   
+  
   Given "Sanjay Gupta" creates the following cases:
-     | Name              | Diagnosis    | id |
+     | name              | diagnosis    | id |
      | John Doe          | Cancer       | 15 |
-    
+  
   Scenario: Add a collaborator
-    Given I am on the case page for "John Doe"
-    Then I should see "Manage Collaborators"
-    Then I should see "Add Collaborators"
-    When I fill in "Add Collaborators" with "hippo@ucsf.org"
-    And I press "Add"
-    Then I should see "Manage Collaborators"
-    Then I should see "hippo@ucsf.org"
+    Given I am on "Sanjay Gupta"'s case page for "John Doe"
+    Then I should see "Add collaborator"
+    When I follow "Add collaborator"
+    Then I follow "Select as collaborator"
+    Then I should be on "Sanjay Gupta"'s case page for "John Doe"
+    Then I should see "Ben Carson"
     
-  Scenario: Sad path
-    Given I am on the case page for "John Doe"
-    Then I should see "Manage Collaborators"
-    Then I should see "Add Collaborators"
-    When I fill in "Add Collaborators" with ""
-    And I press "Add"
-    Then I should see "Manage Collaborators"
-    Then I should see "error"
+  Scenario: Should not be able to select self as collaborator
+    Given I am on "Sanjay Gupta"'s case page for "John Doe"
+    Then I follow "Add collaborator"
+    Then I should not see "Sanjay Gupta"
   

@@ -16,8 +16,12 @@ class CasesController < ApplicationController
   end
   
   def add_collaborator
-    session[:case_id] = params[:id]
-    redirect_to clinicians_path
+    # session[:case_id] = params[:id]
+    @clinician= Clinician.find(params[:clinician_id])
+    @case = @clinician.cases.find(params[:id])
+    exclude = @case.clinicians.each.map {|a| a.id}
+    @clinicians = Clinician.where.not(id: exclude)
+    # redirect_to clinicians_path
   end
   
   def index
