@@ -5,7 +5,7 @@ Feature: Edit Note
   
 Background: clinicians and cases exist
   
-  Given I am on the log in page
+  Given I am on the clinician sign up page
   When I fill in the following:
     | Name                  | Sanjay Gupta   |
     | Email                 | gupta@ucsf.org |
@@ -14,26 +14,24 @@ Background: clinicians and cases exist
   And I press "Sign up"
   
   Given "Sanjay Gupta" creates the following cases:
-     | Name              | Diagnosis    | id |
+     | name              | diagnosis    | id |
      | John Doe          | Cancer       | 15 |
-    
-  Given the following notes exist for "John Doe":
-    |      Subject          |      Author       |                    Note                      |  
-    | Surgery Complication  |   gupta@ucsf.org  | Surgery was successful, but the patient died |
+     
+  Given "Sanjay Gupta" creates the following notes for "John Doe":
+    |      subject           |                    note_text                      |  
+    | Surgery Complication   | Surgery was successful, but the patient died      |
     
   Scenario: Edit an existing note
-    Given I am on the notes page for "John Doe"
-    And I press edit on note with Subject "Surgery Complication"
-    And I fill in "Note" with "Patient did not die"
-    Then I press "Save"
+    Given I am on "Sanjay Gupta"'s edit "Surgery Complication" note for "John Doe"
+    And I fill in "Note text" with "Patient did not die"
+    Then I press "Update"
     Then I should see "Patient did not die"
     
   Scenario: Edit sad path
-    Given I am on the notes page for "John Doe"
-    And I press edit on note with Subject "Surgery Complication"
-    And I fill in "Note" with ""
-    Then I press "Save"
-    Then I should see "Error"
+    Given I am on "Sanjay Gupta"'s edit "Surgery Complication" note for "John Doe"
+    And I fill in "Note text" with ""
+    Then I press "Update"
+    Then I should see "Fields cannot be blank"
     
     
     

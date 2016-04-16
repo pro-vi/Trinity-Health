@@ -1,0 +1,22 @@
+<h1><%=@case.name%></h1>
+<h1 class="text-center">Notes</h1>
+
+<%= link_to "Add Note", new_clinician_case_note_path(@clinician, @case), class: "btn btn-xs btn-primary" %>
+<% @notes.each do |c| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <div class="note-subject">
+          Subject: <%= c.subject %>
+        </div>
+        <div class="note-text">
+          Body: <%= c.note_text%> 
+        </div>
+        <div class="case-actions">
+          <%= link_to "Edit", edit_clinician_case_note_path(@clinician, @case, c), class: "btn btn-xs btn-primary"%>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<% end %>

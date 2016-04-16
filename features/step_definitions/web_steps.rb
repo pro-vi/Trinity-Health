@@ -32,6 +32,10 @@ require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "pat
 # World(WithinHelpers)
 
 # Single-line step scoper
+And /^I log out$/ do
+  visit destroy_clinician_session_path
+end
+
 When /^(.*) within (.*[^:])$/ do |step, parent|
   with_scope(parent) { When step }
 end
@@ -82,7 +86,7 @@ end
 #
 When /^(?:|I )fill in the following:$/ do |fields|
   fields.rows_hash.each do |name, value|
-    When %{I fill in "#{name}" with "#{value}"}
+    step %{I fill in "#{name}" with "#{value}"}
   end
 end
 
