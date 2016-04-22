@@ -21,12 +21,11 @@ Background: Clinician login + Create cases
   | Kanye West          | 8       | M       |       Flu       |
   | Somebody Else       | 50      | M       |     Diabetes    |
   | Steve Jobs          | 60      | M       |  Pancreatic Cancer |
-  | 
 Scenario: Successfully attach file to case
   Given I am on "Sanjay Gupta"'s case page for "Steve Jobs"
   Then I should see "Documents"
   And I follow "Documents"
-  When I select "Attach Files"
+  Then I press "Attach Files"
   When I attach the file at "" to "Steve Jobs"'s case #need to install webrat
   Then I press "Upload"
   And I should see "File(s) successfully uploaded"
@@ -36,7 +35,7 @@ Scenario: Attach Empty File
   Given I am on "Sanjay Gupta"'s case page for "Steve Jobs"
   Then I should see "Documents"
   And I follow "Documents"
-  When I select "Attach Files"
+  Then I press "Attach Files"
   When I attach the file at "" to "Steve Jobs"'s case #need to install webrat
   Then I press "Upload"
   And I should see "File(s) could not be uploaded"

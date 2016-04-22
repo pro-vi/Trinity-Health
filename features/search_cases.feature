@@ -26,23 +26,19 @@ Background: Cases by Clinician
     When I go to the cases page for "Sanjay Gupta"
     Then I should see "Sally Mae"
     Then I should see "Kanye West"
-    And I fill in "Search" with "cancer" #should be case insensitive
+    Then I fill in "Search" with "cancer"
     Then I should see "Steve Jobs"
     Then I should not see "Kanye West"
     
  Scenario: Empty Search by Diagnosis
     When I go to the cases page for "Sanjay Gupta"
-    Then I should see "Sally Mae"
-    Then I should see "Kanye West"
-    And I fill in "Search" with ""
+    Then I fill in "Search" with ""
     Then I should not see "Kanye West"
     Then I should see "No search results found"
 
  Scenario: Search by Gender
     When I go to the cases page for "Sanjay Gupta"
-    Then I should see "Sally Mae"
-    Then I should see "Kanye West"
-    And I fill in "Search" with "female" #should be case insensitive
+    And I fill in "Search" with "female"
     Then I should see "Sally Mae"
     Then I should not see "Steve Jobs"
     

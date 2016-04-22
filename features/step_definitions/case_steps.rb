@@ -21,3 +21,7 @@ Then /^I should be on "(.*)"'s case page$/ do |name|
   id = c.id
   visit path_to("/cases/#{id}")
 end
+
+When(/^I attach the file at "([^"]*)" to "([^"]*)"'s case \#need to install webrat$/) do |arg1, arg2|
+  # Write code here that turns the phrase above into concrete actions
+end
