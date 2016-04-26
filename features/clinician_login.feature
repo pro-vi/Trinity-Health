@@ -28,3 +28,12 @@ Scenario: Sign in Sad Path
   And I fill in "Password" with "carson"
   And I press "Log in"
   Then I should see "Invalid email or password"
+  
+Scenario: Log out
+  When I go to the log in page
+  And I fill in "Email" with "gupta@ucsf.org"
+  And I fill in "Password" with "sanjaygupta"
+  And I press "Log in"
+  Then I should see "Log out"
+  When I follow "Log out"
+  Then I should see "Signed out successfully"
