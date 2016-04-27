@@ -4,5 +4,6 @@ class Case < ActiveRecord::Base
     has_many :clinicians, through: :patients
     has_many :patients
     accepts_nested_attributes_for :clinicians
-    has_many :notes
+    has_many :notes, :dependent => :destroy
+    has_many :attachments, :dependent => :destroy
 end

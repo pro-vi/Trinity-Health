@@ -12,6 +12,10 @@
   <%= simple_format(@case.treatment_history) %>
   <h4 class="past_medical_history"><strong>Past Medical History:</strong></h4>
   <%= simple_format(@case.past_medical_history) %>
+  <h4 class="Attachment"><strong>Attachments:</strong></h4>
+  <% @attachments.each do |attachment| %>
+      <%= image_tag attachment.document.url(:thumb) %>
+  <% end %>
   <div class="case-actions">
     <%= link_to "Back to list", clinician_cases_path(@clinician_id), class: "btn btn-xs btn-success" %>
     <% if @allowed %>
