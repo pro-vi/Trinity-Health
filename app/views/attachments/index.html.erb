@@ -1,0 +1,6 @@
+<h2 class="text-center">Patient Name: <strong><%= @case.name %></strong></h2>
+<%= tabs(:case_nav) %>
+
+  <% @attachments.each do |attachment| %>
+      <%= image_tag attachment.document.url(:thumb) %>
+  <% end %>

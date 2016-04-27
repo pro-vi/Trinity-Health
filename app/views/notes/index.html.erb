@@ -1,5 +1,5 @@
-<h1><%=@case.name%></h1>
-<h1 class="text-center">Notes</h1>
+<h2 class="text-center">Patient Name: <strong><%= @case.name %></strong></h2>
+<%= tabs(:case_nav) %>
 
 <%= link_to "Add Note", new_clinician_case_note_path(@clinician, @case), class: "btn btn-xs btn-primary" %>
 <% @notes.each do |c| %>
