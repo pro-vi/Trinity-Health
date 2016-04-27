@@ -28,6 +28,11 @@ class CasesController < ApplicationController
     @clinician_id = params[:clinician_id].to_i
     @allowed = @clinician_id == current_clinician.id
     @cases = Clinician.find(@clinician_id).cases
+    if params[:search].present?
+      @cases = Case.search(params[:search], @clinician_id)
+    else
+      @cases = Case.all
+    end
   end
   
   def new
