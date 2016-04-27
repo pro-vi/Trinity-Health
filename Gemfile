@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem "paperclip", "~> 5.0.0.beta1"
 gem 'tabulous'
+gem 'rmagick', :require => 'RMagick'
 gem 'devise'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -2,9 +2,5 @@
 <%= tabs(:case_nav) %>
 
   <% @attachments.each do |attachment| %>
-      <% if attachment.document_content_type == "application/pdf" %>
-        <object data=<%= attachment.document.url %> width="300px" height="300px" data-object_type="document"></object>
-      <% else %>
-        <%=link_to( image_tag(attachment.document.url(:medium)), attachment.document.url) %>
-      <% end %>
+    <%=link_to( image_tag(attachment.document.url(:thumb)), attachment.document.url) %>
   <% end %>
