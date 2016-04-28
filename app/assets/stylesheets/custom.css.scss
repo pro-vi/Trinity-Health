@@ -4,21 +4,21 @@
 /* Styling for jumbotron */
 
 .jumbotron {
-  background-image: asset-url('jumbotron/jumbotron-bkg.jpg');
+  background-image: asset-url('jumbotron/stock-preview.jpeg');
   background-size: cover;
-  height: 600px;
+  height: 768px;
   color: #fff;
   overflow: hidden;
-  font-weight: bold;
   text-align: center;
 }
 
 .jumbotron h1 {
-  text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
+  font-weight: bold;
+  // text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
 .jumbotron h3 {
-  text-shadow: 1px 1px #000;
+  // text-shadow: 1px 1px #000;
 }
 
 .jumbotron-button {
@@ -174,7 +174,7 @@
 /* Styling for footer */
 
 footer {
-  margin-top: 50px;
+  margin-top: 30px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
