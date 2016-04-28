@@ -10,7 +10,7 @@ First, doctors can create cases for patients and invite their colleagues to coll
 Second, they can upload and share clinical files and other relevant data with their colleagues.
 Lastly, they can share and receive updates in the form of notes on the patients’ conditions.
 
-**Team Members:**
+**Team Members**
 
 Nabeel Saleem
 
