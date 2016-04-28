@@ -65,4 +65,20 @@ class NotesController < ApplicationController
     @case = @clinician.cases.find(params[:case_id]) 
     @notes = @case.notes
   end 
+  
+  def destroy
+    @clinician_id = params[:clinician_id].to_i
+    @clinician = Clinician.find(@clinician_id)
+    @case_id = params[:case_id].to_i
+    if @clinician_id != current_clinician.id
+      flash[:warning] = "You cannot delete notes for cases you are not a part of"
+      redirect_to clinician_cases_path(@clinician_id)
+    else
+      @case = @clinician.cases.find(@case_id)
+      @note = @case.notes.find(params[:id])
+      @note.destroy
+      flash[:success] = "Note was succesfully deleted"
+      redirect_to clinician_case_notes_path(@clinician_id, @case_id)
+    end
+  end
 end

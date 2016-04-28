@@ -36,3 +36,15 @@ Scenario: Add a note sad path
   When I fill in "Subject" with "Prognosis update"
   And I press "Create"
   Then I should see "Please fill in note"
+  
+Scenario: Delete a note
+  Given I am on "Sanjay Gupta"'s case page for "John Doe"
+  And I follow "Notes"
+  And I follow "Add Note"
+  When I fill in "Subject" with "Prognosis update"
+  Then I fill in "Note" with "Successful surgery"
+  And I press "Create"
+  Then I should be on "Sanjay Gupta"'s note page for "John Doe"
+  And I should see "Delete"
+  Then I follow "Delete"
+  Then I should not see "Successful surgery"
