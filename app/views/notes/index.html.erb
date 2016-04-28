@@ -8,11 +8,12 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div class="well well-lg">
         <div class="note-subject">
-          Subject: <%= c.subject %>
+          <h4> <%= c.subject %> </h4>
         </div>
         <div class="note-text">
-          Body: <%= c.note_text%> 
+          <%= c.note_text%> 
         </div>
+        <p></p>
         <div class="case-actions">
           <%= link_to "Edit", edit_clinician_case_note_path(@clinician, @case, c), class: "btn btn-xs btn-primary"%>
         </div>

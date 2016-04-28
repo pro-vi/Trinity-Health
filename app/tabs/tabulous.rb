@@ -70,7 +70,7 @@ Tabulous.setup do
   use_css_scaffolding do
     background_color '#fff'
     text_color '#444'
-    active_tab_color '#DAF7A6'
+    active_tab_color '#56A5EC'
     hover_tab_color '#fff'
     inactive_tab_color '#eee'
     inactive_text_color '#888'

@@ -3,39 +3,43 @@
 <p></p>
 <p></p>
 <div class="row">
-  <div class="well col-xs-5 col-xs-offset-2">
-  <% @clinicians.each do |c| %>
-  <!--<div class="row">-->
-    <div class="col-xs-8 col-xs-offset-2">
-      <div class="well well-lg">
-        <div class="clinician-name">
-          Name: <%= link_to c.name, clinician_path(c) %>
-        </div>
-        <div class="clinician-email">
-          Email: <%= c.email %>
-        </div>
-        <div class="clinician-specialty">
-          Specialty: <%= c.specialty %>
-        </div>
-        <!-- the button used to select as collaborator, see case view -->
-        <div class="clinician-select">
-          <% if @case %>
-          <%= link_to "Select as collaborator", assign_collaborator_path(@clinician, @case, c) , { class: "btn btn-sm btn-primary" } %>
-          <% end %>
+
+    <div class="well col-xs-5 col-xs-offset-2" >
+    <% if @clinicians.count != 0 %>  
+    <% @clinicians.each do |c| %>
+      <div class="col-xs-12">
+        <div class="well well-lg" id="collaborators">
+          <div class="clinician-name">
+            Name: <%= link_to c.name, clinician_path(c) %>
+          </div>
+          <div class="clinician-email">
+            Email: <%= c.email %>
+          </div>
+          <div class="clinician-specialty">
+            Specialty: <%= c.specialty %>
+          </div>
+          <!-- the button used to select as collaborator, see case view -->
+          <p></p>
+          <div class="clinician-select">
+            <% if @case %>
+            <%= link_to "Select as collaborator", assign_collaborator_path(@clinician, @case, c) , { class: "btn btn-sm btn-success" } %>
+            <% end %>
+          </div>
         </div>
       </div>
-    </div>
-  <!--</div>-->
-  
+    <!--</div>-->
+    
+  <% end %>
+    
+<% else %>    
+  <h4 class="text-center">There are no collaborators to invite.</h4>
 <% end %>
-  
-   
-</div>
+  </div>
 
   <div id="collaborator-column">
     <div class="well col-xs-2 col-xs-offset-1">
-      <h4><strong>Members</strong></h4>
-      <div class="collaborators">
+      <h4  class="text-center"><strong>Members</strong></h4>
+      <div>
         <ul>
           <% @case.clinicians.each do |clinician| %>
           <li><%= link_to clinician.name, clinician_path(clinician) %></li>

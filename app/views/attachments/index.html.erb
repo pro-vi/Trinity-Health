@@ -5,17 +5,21 @@
 <div class="text-center"><%= tabs(:case_nav) %></div>
 <div class="thumbnail_body"> 
   <div class="thumbnail_wrapper"> 
-    <% @attachments.each do |attachment| %>
-      <div class="thumbnail_container">
-        <% if attachment.document_content_type == "application/pdf" %>
-            <object data=<%= attachment.document.url %> width="350px" height="350px" data-object_type="document"></object>
-          <!--</div>-->
-        <% else %>
-          <!--<div class="thumbnail_container">-->
-          <%=link_to( image_tag(attachment.document.url(:medium)), attachment.document.url) %>
-          <!--</div>-->
-        <% end %>
-      </div>
+    <% if @attachments.count == 0 %>
+      <h1 class="text-center"> No attached documents.</h1>
+    <% else %>
+      <% @attachments.each do |attachment| %>
+        <div class="thumbnail_container">
+          <% if attachment.document_content_type == "application/pdf" %>
+              <object data=<%= attachment.document.url %> width="350px" height="350px" data-object_type="document"></object>
+            <!--</div>-->
+          <% else %>
+            <!--<div class="thumbnail_container">-->
+            <%=link_to( image_tag(attachment.document.url(:medium)), attachment.document.url) %>
+            <!--</div>-->
+          <% end %>
+        </div>
+      <% end %>
     <% end %>
   </div>  
 </div>

@@ -12,7 +12,7 @@ class CasesController < ApplicationController
     @case = @clinician.cases.find(params[:id])
     collaborator = Clinician.find(params[:collaborator])
     @case.clinicians << collaborator
-    redirect_to clinician_case_path(@clinician, @case)
+    redirect_to add_collaborator_path(@clinician, @case)
   end
   
   def add_collaborator
