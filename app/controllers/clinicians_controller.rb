@@ -14,23 +14,7 @@ class CliniciansController < ApplicationController
   def index
     @clinicians = Clinician.all
   end
-    
-  def new
-    @clinician = Clinician.new
-    redirect_to new_clinician_registration_path
-  end
-  
-  def create
-    @clinician = Clinician.new(clinician_params)
-    if @clinician.save
-      flash[:success] = "Clinician was succesfully created"
-      redirect_to clinician_path(@clinician)
-    else
-      flash[:danger] = "There was a problem creating the clinician"
-      render :new
-    end
-  end
-    
+
   def show
     @clinician = Clinician.find(params[:id])
     @allowed = @clinician.id == current_clinician.id
