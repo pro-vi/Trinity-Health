@@ -35,8 +35,6 @@ class CasesController < ApplicationController
           @empty_search = true
         end
       end
-    else
-      @cases = Case.all
     end
   end
   
