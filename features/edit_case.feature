@@ -32,6 +32,11 @@ Scenario: Edit cases
     When I fill in "Diagnosis" with "Cardiovascular Disease"
     And I press "Update Case"
     Then I should see "Cardiovascular Disease"
+  
+Scenario: Cancel editing case
+  When I am on "Sanjay Gupta"'s edit page for "Sally Mae"
+  And I follow "Cancel"
+  Then I should be on "Sanjay Gupta"'s case page for "Sally Mae"
 
 Scenario: Sad path
     When I go to the cases page for "Sanjay Gupta"

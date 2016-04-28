@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160407023824) do
+ActiveRecord::Schema.define(version: 20160428053231) do
+
+  create_table "attachments", force: :cascade do |t|
+    t.integer  "case_id"
+    t.string   "document_file_name"
+    t.string   "document_content_type"
+    t.integer  "document_file_size"
+    t.datetime "document_updated_at"
+  end
 
   create_table "cases", force: :cascade do |t|
     t.string   "name"

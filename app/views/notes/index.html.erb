@@ -1,19 +1,24 @@
-<h1><%=@case.name%></h1>
-<h1 class="text-center">Notes</h1>
-
+<h2 class="text-center">Patient Name: <strong><%= @case.name %></strong></h2>
+<%= tabs(:case_nav) %>
+<p></p>
+<p></p>
 <%= link_to "Add Note", new_clinician_case_note_path(@clinician, @case), class: "btn btn-xs btn-primary" %>
 <% @notes.each do |c| %>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
       <div class="well well-lg">
         <div class="note-subject">
-          Subject: <%= c.subject %>
+          <h4> <%= c.subject %> </h4>
         </div>
         <div class="note-text">
-          Body: <%= c.note_text%> 
+          <%= c.note_text%> 
         </div>
+        <p></p>
         <div class="case-actions">
           <%= link_to "Edit", edit_clinician_case_note_path(@clinician, @case, c), class: "btn btn-xs btn-primary"%>
+          <%= link_to "Delete", clinician_case_note_path(@clinician, @case, c), method: :delete,  
+                                  data: { confirm: "Are you sure you want to delete this note?" }, 
+                                  class: "btn btn-xs btn-danger" %>
         </div>
       </div>
     </div>

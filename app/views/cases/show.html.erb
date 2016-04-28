@@ -1,7 +1,9 @@
 <h2 class="text-center">Patient Name: <strong><%= @case.name %></strong></h2>
-
+<%= tabs(:case_nav) %>
+<p></p>
+<p></p>
 <div class="row">
-  <div class="well col-xs-8">
+  <div class="well col-xs-8 col-xs-offset-2">
     <h4><strong>Age: <%= @case.age %></strong></h4>
     <h4><strong>Gender: <%= @case.gender %></strong></h4>
   <h4 class="diagnosis"><strong>Diagnosis:</strong></h4>
@@ -20,26 +22,8 @@
                             data: { confirm: "Are you sure you want to delete this case?"}, 
                             class: "btn btn-xs btn-danger" %>
     <% end %>
-
-    <%= link_to "Notes", clinician_case_notes_path(@clinician_id, @case.id), class: "btn btn-xs btn-primary"%>
- </div>
+  </div>
   
    
 </div>
-
-  <div id="collaborator-column">
-    <div class="well col-xs-3 col-xs-offset-1">
-      <h4><strong>Members</strong></h4>
-      <div class="collaborators">
-        <ul>
-          <% @case.clinicians.each do |clinician| %>
-          <li><%= link_to clinician.name, clinician_path(clinician) %></li>
-          <% end %>
-        </ul>
-      </div><!-- /.collaborators -->
-      <% if @allowed %>
-        <%= link_to "Add collaborator", add_collaborator_path(@clinician_id, @case.id), class: "btn btn-primary", :id => 'add-collaborator' %>
-      <% end %>
-    </div>
- </div>
 </div><!-- /.row -->

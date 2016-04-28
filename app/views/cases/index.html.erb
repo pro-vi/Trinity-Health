@@ -1,5 +1,8 @@
 <h1 class="text-center">Cases</h1>
 
+<% if @empty_search %>
+  <h2 class="text-center"> No search results found </h2>
+<% end %>
 <% @cases.each do |c| %>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">

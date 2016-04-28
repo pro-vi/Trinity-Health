@@ -24,13 +24,13 @@ Background: clinicians and cases exist
   Scenario: Edit an existing note
     Given I am on "Sanjay Gupta"'s edit "Surgery Complication" note for "John Doe"
     And I fill in "Note text" with "Patient did not die"
-    Then I press "Update"
+    Then I press "Update Note"
     Then I should see "Patient did not die"
     
   Scenario: Edit sad path
     Given I am on "Sanjay Gupta"'s edit "Surgery Complication" note for "John Doe"
     And I fill in "Note text" with ""
-    Then I press "Update"
+    Then I press "Update Note"
     Then I should see "Fields cannot be blank"
     
     

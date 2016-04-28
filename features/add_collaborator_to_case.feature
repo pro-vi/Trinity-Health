@@ -27,14 +27,13 @@ Background: Set up Clinicians
   
   Scenario: Add a collaborator
     Given I am on "Sanjay Gupta"'s case page for "John Doe"
-    Then I should see "Add collaborator"
-    When I follow "Add collaborator"
+    Then I follow "Manage Collaborators"
     Then I follow "Select as collaborator"
-    Then I should be on "Sanjay Gupta"'s case page for "John Doe"
     Then I should see "Ben Carson"
+    Then I should not see "carson@ucsf.org"
     
   Scenario: Should not be able to select self as collaborator
     Given I am on "Sanjay Gupta"'s case page for "John Doe"
-    Then I follow "Add collaborator"
-    Then I should not see "Sanjay Gupta"
+    Then I follow "Manage Collaborators"
+    Then I should not see "gupta@ucsf.org"
   

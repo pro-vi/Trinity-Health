@@ -1,0 +1,39 @@
+<h2 class="text-center">Patient Name: <strong><%= @case.name %></strong></h2>
+<p></p>
+<p></p>
+<p></p>
+<div class="text-center"><%= tabs(:case_nav) %></div>
+<div class="thumbnail_body"> 
+  <div class="thumbnail_wrapper"> 
+    <% if @attachments.count == 0 %>
+      <h1 class="text-center"> No attached documents.</h1>
+    <% else %>
+      <% @attachments.each do |attachment| %>
+        <div class="thumbnail_container">
+          <% if attachment.document_content_type == "application/pdf" %>
+              <object data=<%= attachment.document.url %> width="350px" height="350px" data-object_type="document"></object>
+            <!--</div>-->
+          <% else %>
+            <!--<div class="thumbnail_container">-->
+            <%=link_to( image_tag(attachment.document.url(:medium)), attachment.document.url) %>
+            <!--</div>-->
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>  
+</div>
+<!--<p></p>-->
+<!--<p>-->
+<!--<div class='row'>-->
+<!--  <div class='col-xs-7'>-->
+<!--    <%= form_for([@clinician, @case], :html => {class: "form-horizontal", role: "form", multipart: true}) do |f| %>-->
+<!--      <div class="form-group">-->
+<!--        <div class="col-sm-4 col-sm-offset-8">-->
+<!--          <%= file_field_tag "documents[]", type: :file, multiple: true, class: 'btn btn-primary btn-sm' %>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    <% end %>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</p>-->
