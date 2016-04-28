@@ -16,7 +16,7 @@
           <%= f.label :age %>
         </div>
         <div class="col-sm-8">
-          <%= f.number_field :age, in: 1..100, class: "form-control", placeholder: "Age of patient (Number only) "%>
+          <%= f.number_field :age, in: 1..100, class: "form-control", placeholder: "Age of patient (Number only)" %>
         </div>
       </div>
       <div class="form-group">
@@ -24,7 +24,7 @@
           <%= f.label :gender %>
         </div>
         <div class="col-sm-8">
-          <%= f.select :gender, [ 'Male', 'Female' ] %>
+          <%= f.select :gender, [ 'Male', 'Female' ], {}, {class: "form-control"} %>
         </div>
       </div>
       <div class="form-group">

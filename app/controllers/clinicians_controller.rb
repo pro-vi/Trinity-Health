@@ -26,7 +26,7 @@ class CliniciansController < ApplicationController
       flash[:success] = "Clinician was succesfully created"
       redirect_to clinician_path(@clinician)
     else
-      flash[:notice] = "There was a problem creating the clinician"
+      flash[:danger] = "There was a problem creating the clinician"
       render :new
     end
   end

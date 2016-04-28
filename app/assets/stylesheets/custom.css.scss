@@ -1,25 +1,127 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-footer {
-  margin-top: 50px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+/* Styling for jumbotron */
+
+.jumbotron {
+  background-image: asset-url('jumbotron/stock-preview.jpeg');
+  background-size: cover;
+  height: 768px;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
 }
 
-footer small {
-  float: left;
+.jumbotron h1 {
+  font-weight: bold;
+  // text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
-footer ul {
-  float: right;
-  list-style: none;
+.jumbotron h3 {
+  // text-shadow: 1px 1px #000;
 }
 
-footer ul li {
-  float: left;
-  margin-left: 15px;
+.jumbotron-button {
+  font-size: 20px;
+  width: 100px;
+  margin: 30px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* Styling for navigation bar */
+
+.navbar-default {
+  background-color: #568dc1;
+  border-color: #4c88c1;
+}
+.navbar-default .navbar-brand {
+  color: #eef1f2;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #cccbe3;
+}
+.navbar-default .navbar-text {
+  color: #eef1f2;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #eef1f2;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #cccbe3;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #568dc1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #eef1f2;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #cccbe3;
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #cccbe3;
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #cccbe3;
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #cccbe3;
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-toggle {
+  border-color: #4c88c1;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #4c88c1;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #eef1f2;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #eef1f2;
+}
+.navbar-default .navbar-link {
+  color: #eef1f2;
+}
+.navbar-default .navbar-link:hover {
+  color: #cccbe3;
+}
+
+
+
+/* Other Stylings */
+
+/* Styling for unstyled alert class */
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.alert-alert, .alert-error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+
 }
 
 .case-name {
@@ -48,11 +150,25 @@ footer ul li {
   padding-bottom: 15px;
 }
 
-/* styling for clinician 
-.clinician-select {
-  display: none;
+.min-password-len {
+  color: #808080;
 }
-*/
+
+/* Fix chrome checkbox auto -20 margin-left */
+.checkbox input[type="checkbox"] {
+  margin-left: 0px;
+}
+
+/* Fix the text related to fixed checkbox */
+.checkbox-fix {
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+}
+
+.checkbox-text {
+  padding-left: 20;
+}
 
 .tabs {
   left: 145px;
@@ -66,4 +182,28 @@ footer ul li {
 #collaborators {
   background-color: #fff;
   border: none;
+}
+
+
+/* Styling for footer */
+
+footer {
+  margin-top: 30px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
 }
