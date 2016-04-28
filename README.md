@@ -1,4 +1,4 @@
-# Trinity-Health
+#Trinity-Health
 Repo for Trinity Health Software as a Service!
 
 Team Members:
@@ -15,7 +15,7 @@ Yucong He
 
 Kamran Siddiqui
 
-https://www.pivotaltracker.com/n/projects/1544149
+Link to Pivotal Tracker: https://www.pivotaltracker.com/n/projects/1544149
 
 <a href="https://codeclimate.com/github/ProvidenceXz/Trinity-Health"><img src="https://codeclimate.com/github/ProvidenceXz/Trinity-Health/badges/gpa.svg" /></a>
 
