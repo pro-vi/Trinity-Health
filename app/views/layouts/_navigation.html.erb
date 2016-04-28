@@ -33,7 +33,7 @@
       <% if clinician_signed_in? %>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <%= form_tag clinician_cases_path, :method => 'get' do %>
+            <%= form_tag clinician_cases_path(current_clinician), :method => 'get' do %>
               <%= text_field_tag :search, params[:search] %>
               <%= submit_tag "Search", :class => "btn btn-default", :name => 'submit', :id => 'submit' %>
             <% end %>
