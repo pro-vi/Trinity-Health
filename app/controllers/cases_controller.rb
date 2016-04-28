@@ -12,7 +12,7 @@ class CasesController < ApplicationController
     @case = @clinician.cases.find(params[:id])
     collaborator = Clinician.find(params[:collaborator])
     @case.clinicians << collaborator
-    redirect_to clinician_case_path(@clinician, @case)
+    redirect_to add_collaborator_path(@clinician, @case)
   end
   
   def add_collaborator
@@ -58,6 +58,11 @@ class CasesController < ApplicationController
     @clinician = Clinician.find(@clinician_id)
     @case = @clinician.cases.new(case_params)
     if @case.save
+      if params[:documents]
+        params[:documents].each do |doc|
+           @case.attachments.create(document: doc)
+        end
+      end
       flash[:success] = "Case was succesfully created"
       redirect_to clinician_case_path(@clinician_id, @case.id)
     else
@@ -71,6 +76,11 @@ class CasesController < ApplicationController
     @clinician = Clinician.find(current_clinician.id)
     @case = Case.find(@case_id)
     if @case.update(case_params)
+      if params[:documents]
+        params[:documents].each do |doc|
+           @case.attachments.create(document: doc)
+        end
+      end
       flash[:success] = "Case was succesfully updated"
       redirect_to clinician_case_path(@clinician_id, @case.id)
     else
@@ -83,6 +93,7 @@ class CasesController < ApplicationController
     @case_id = params[:id].to_i
     @allowed = @clinician_id == current_clinician.id
     @case = Case.find(@case_id)
+    @attachments = @case.attachments
   end
   
   def destroy
