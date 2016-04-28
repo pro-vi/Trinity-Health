@@ -1,3 +1,55 @@
 // Place all the styles related to the Attachments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.thumbnail_container {
+    float: left;
+    margin: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    position: relative;
+    width: auto;
+    height: 400px;
+    cursor: auto;
+}
+
+.thumbnail_wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.thumbnail_body {
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 140px;
+        padding-left: 0px;
+    text-align: center;
+    font-family: 'Gotham Rounded A', 'Gotham Rounded B', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #AAA;
+    font-size: 10px;
+    line-height: 14px;
+    background: #FFF;
+        background-image: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: initial;
+        background-repeat-x: initial;
+        background-repeat-y: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    padding-bottom: 140px;
+}

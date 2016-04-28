@@ -26,13 +26,14 @@ Tabulous.setup do
       active_when   { in_action('index').of_controller('notes') }
     end
     
-    # collaborators_tab do
-    #   text          { 'Notes' }
-    #   link_path     { params[:id] == nil ? clinician_case_notes_path(params[:clinician_id], params[:case_id]) : clinician_case_notes_path(params[:clinician_id], params[:id])}
-    #   visible_when  { true }
-    #   enabled_when  { true }
-    #   active_when   { in_action('index').of_controller('notes') }
-    # end
+    collaborators_tab do
+      text          { 'Manage Collaborators' }
+      link_path     { params[:id] == nil ? add_collaborator_path(params[:clinician_id], params[:case_id]) : add_collaborator_path(params[:clinician_id], params[:id])}
+      visible_when  { true }
+      enabled_when  { true }
+      active_when   { in_action('add_collaborator').of_controller('cases') ;
+                      in_action('assign_collaborator').of_controller('cases') }
+    end
 
 
   end
