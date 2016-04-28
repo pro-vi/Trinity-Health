@@ -1,4 +1,8 @@
-<div class="jumbotron text-center">
+<div class="jumbotron">
   <h1>Trinity Health</h1>
   <h3>A SaaS app that saves lives.</h3>
+  <% unless clinician_signed_in? %>
+    <%= link_to "Sign Up", new_clinician_registration_path, class: "btn btn-secondary btn-lg" %>
+    <%= link_to "Log In", new_clinician_session_path, class: "btn btn-secondary btn-lg" %>
+  <% end %>
 </div>
