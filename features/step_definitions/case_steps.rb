@@ -22,6 +22,9 @@ Then /^I should be on "(.*)"'s case page$/ do |name|
   visit path_to("/cases/#{id}")
 end
 
-When(/^I attach the file at "([^"]*)" to "([^"]*)"'s case \#need to install webrat$/) do |arg1, arg2|
-  # Write code here that turns the phrase above into concrete actions
+Given(/^I attach the file "([^"]*)" to "([^"]*)"'s case$/) do |arg1, arg2|
+  c = Case.find_by_name(arg2)
+  attach = c.attachments.new
+  attach.document_file_name = "#{arg1}"
+  c.save
 end
