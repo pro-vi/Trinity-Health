@@ -62,6 +62,7 @@ class NotesController < ApplicationController
 
   def index
     @clinician = Clinician.find(params[:clinician_id])
+    @allowed = @clinician == current_clinician
     @case = @clinician.cases.find(params[:case_id]) 
     @notes = @case.notes
   end 
