@@ -9,7 +9,7 @@ class Case < ActiveRecord::Base
     
     def self.search(search)
       if search
-        self.where("name LIKE ? OR diagnosis LIKE ? OR age = ? OR gender LIKE ?", search, search, search.to_i, search)
+        self.where("name like ? OR diagnosis LIKE ? OR age = ? OR gender LIKE ?", "%#{search}%", "%#{search}%", "%#{search.to_i}%", "%#{search}%")
       end
     end
 end
