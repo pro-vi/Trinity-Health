@@ -29,8 +29,8 @@ Tabulous.setup do
     collaborators_tab do
       text          { 'Manage Collaborators' }
       link_path     { params[:id] == nil ? add_collaborator_path(params[:clinician_id], params[:case_id]) : add_collaborator_path(params[:clinician_id], params[:id])}
-      visible_when  { true }
-      enabled_when  { true }
+      visible_when  { current_clinician.id == params[:clinician_id].to_i }
+      enabled_when  { current_clinician.id == params[:clinician_id].to_i }
       active_when   { in_action('add_collaborator').of_controller('cases') ;
                       in_action('assign_collaborator').of_controller('cases') }
     end

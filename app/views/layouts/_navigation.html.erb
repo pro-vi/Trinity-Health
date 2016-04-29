@@ -18,15 +18,14 @@
           <li><%= link_to "Add Case", new_clinician_case_path(current_clinician.id) %></li>
         <% end %>
       </ul>
+
       <% if clinician_signed_in? %>
-        <form class="navbar-form navbar-left" role="search">
-            <%= form_tag clinician_cases_path(current_clinician), :method => 'get' do %>
-              <div class="form-group">
-                <%= text_field_tag :search, params[:search], placeholder: "Search case..", :class => "form-control" %> 
-                <%= submit_tag "Search", :class => "btn btn-default", :name => 'submit', :id => 'submit' %>
-              </div>
-            <% end %>
-        </form>
+        <%= form_tag clinician_cases_path(current_clinician), :method => 'get', :class => "navbar-form navbar-left" do %>
+          <div class="form-group">
+            <%= text_field_tag :search, params[:search], placeholder: "Search case..", :class => "form-control" %> 
+            <%= submit_tag "Search", :class => "btn btn-default", :name => 'submit', :id => 'submit' %>
+          </div>
+        <% end %>
       <% end %>
       <ul class="nav navbar-nav navbar-right">
         <% unless clinician_signed_in? %>
