@@ -31,12 +31,10 @@ class CasesController < ApplicationController
         @cases = []
       else
         @cases = Case.search(params[:search])
-        if @cases.length == 0
+        if @cases.count == 0
           @empty_search = true
         end
       end
-    else
-      @cases = Case.all
     end
   end
   
@@ -121,5 +119,8 @@ class CasesController < ApplicationController
       redirect_to clinician_cases_path(@clinician_id)
     end
   end
+  
+  def search
 
+  end
 end

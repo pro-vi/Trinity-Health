@@ -37,3 +37,26 @@ Scenario: Log out
   Then I should see "Log out"
   When I follow "Log out"
   Then I should see "Signed out successfully"
+  
+Scenario: Edit Profile
+  When I go to the log in page
+  And I fill in "Email" with "gupta@ucsf.org"
+  And I fill in "Password" with "sanjaygupta"
+  And I press "Log in"
+  And I follow "My Profile"
+  And I follow "Edit Profile"
+  And I fill in "Email" with "sanjaygupta@ucsf.org"
+  And I press "Update Clinician"
+  Then I should see "Sanjay Gupta"
+  Then I should see "sanjaygupta@ucsf.org"
+  
+Scenario: Edit Profile sad path
+  When I go to the log in page
+  And I fill in "Email" with "gupta@ucsf.org"
+  And I fill in "Password" with "sanjaygupta"
+  And I press "Log in"
+  And I follow "My Profile"
+  And I follow "Edit Profile"
+  And I fill in "Email" with ""
+  And I press "Update Clinician"
+  Then I should see "Email can't be blank"

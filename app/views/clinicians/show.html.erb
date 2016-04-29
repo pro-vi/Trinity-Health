@@ -5,7 +5,9 @@
   <h4><strong>Email: <%= @clinician.email %></strong></h4>
   <h4><strong>Specialty:</strong></h4>
   <%= simple_format(@clinician.specialty) %>
-  <div class="clinician-action">
-    <%= link_to "Back to list", clinicians_path, class: "btn btn-xs btn-success" %>
- </div>
+  <% if @allowed %>
+    <div class="clinician-action">
+      <%= link_to "Edit Profile", edit_clinician_path, class: "btn btn-xs btn-primary" %>
+   </div>
+  <% end %>
 </div>

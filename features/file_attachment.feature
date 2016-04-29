@@ -13,29 +13,30 @@ Background: Clinician login + Create cases
     | Password              | sunjaygupta    |
     | Password confirmation | sunjaygupta    |
   And I press "Sign up"
+  When I am on the new case page for "gupta@ucsf.org"
+  And I fill in "Name" with "King Kong"
+  And I fill in "Diagnosis" with "Common Cold"
+  And I press "Create Case"
   
-  Given "Sanjay Gupta" creates the following cases:
-  | name                | age     | gender  |    diagnosis    |
-  | Sally Mae           | 102     | F       |   Breast Cancer |
-  | Freddie Mac         | 99      | M       |   Lung Cancer   |
-  | Kanye West          | 8       | M       |       Flu       |
-  | Somebody Else       | 50      | M       |     Diabetes    |
-  | Steve Jobs          | 60      | M       |  Pancreatic Cancer |
-Scenario: Successfully attach file to case
-  Given I am on "Sanjay Gupta"'s case page for "Steve Jobs"
+  
+Scenario: No Attached Files
+  Given I attach the file "TestImage.jpg" to "King Kong"'s case
+  Given I am on "Sanjay Gupta"'s case page for "King Kong"
   Then I should see "Documents"
-  And I follow "Documents"
-  Then I press "Attach Files"
-  When I attach the file at "" to "Steve Jobs"'s case #need to install webrat
-  Then I press "Upload"
-  And I should see "File(s) successfully uploaded"
+  Then I follow "Documents"
+  Then I should not see "No attached documents."
     
-
-Scenario: Attach Empty File
-  Given I am on "Sanjay Gupta"'s case page for "Steve Jobs"
+Scenario: Successfully attach file to case 
+  Given I am on "Sanjay Gupta"'s case page for "King Kong"
   Then I should see "Documents"
   And I follow "Documents"
-  Then I press "Attach Files"
-  When I attach the file at "" to "Steve Jobs"'s case #need to install webrat
-  Then I press "Upload"
-  And I should see "File(s) could not be uploaded"
+  Then I should see "No attached documents."
+
+# Scenario: Attach Empty File
+#   Given I am on "Sanjay Gupta"'s case page for "Steve Jobs"
+#   Then I should see "Documents"
+#   And I follow "Documents"
+#   Then I press "Attach Files"
+#   When I attach the file at "" to "Steve Jobs"'s case #need to install webrat
+#   Then I press "Upload"
+#   And I should see "File(s) could not be uploaded"

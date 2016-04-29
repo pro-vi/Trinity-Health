@@ -14,25 +14,32 @@ class CliniciansController < ApplicationController
   def index
     @clinicians = Clinician.all
   end
-    
-  def new
-    @clinician = Clinician.new
-    redirect_to new_clinician_registration_path
-  end
-  
-  def create
-    @clinician = Clinician.new(clinician_params)
-    if @clinician.save
-      flash[:success] = "Clinician was succesfully created"
-      redirect_to clinician_path(@clinician)
-    else
-      flash[:notice] = "There was a problem creating the clinician"
-      render :new
-    end
-  end
-    
+
   def show
     @clinician = Clinician.find(params[:id])
+    @allowed = @clinician.id == current_clinician.id
+  end
+  
+  def edit
+    @clinician_id = params[:id]
+    @clinician = Clinician.find(@clinician_id)
+    if @clinician.id != current_clinician.id
+      flash[:warning] = "You cannot edit another clinician's profile"
+      redirect_to clinician_path(@clinician_id)
+    else
+      @clinician = Clinician.find(@clinician_id)
+    end
+  end
+  
+  def update
+    @clinician_id = params[:id].to_i
+    @clinician = Clinician.find(@clinician_id)
+    if @clinician.update(clinician_params)
+      flash[:success] = "Profile was succesfully updated"
+      redirect_to clinician_path(@clinician_id)
+    else
+      render 'edit'
+    end
   end
 
 end
