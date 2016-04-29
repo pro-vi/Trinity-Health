@@ -16,7 +16,7 @@ Background: Cases by Clinician
   
   Given "Sanjay Gupta" creates the following cases:
   | name                | age     | gender  |    diagnosis    |
-  | Sally Mae           | 102     | female       |   Breast Cancer |
+  | Sally Mae           | 102     | Female       |   Breast Cancer |
   | Freddie Mac         | 99      | M       |   Lung Cancer   |
   | Kanye West          | 8       | M       |       Flu       |
   | Somebody Else       | 50      | M       |     Diabetes    |
@@ -40,7 +40,7 @@ Background: Cases by Clinician
 
  Scenario: Search by Gender
     When I go to the cases page for "Sanjay Gupta"
-    And I fill in "search" with "Fe"
+    And I fill in "search" with "Female"
     Then I press "Search"
     Then I should see "Sally Mae"
     Then I should not see "Steve Jobs"
