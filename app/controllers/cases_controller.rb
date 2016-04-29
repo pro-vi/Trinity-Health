@@ -9,14 +9,22 @@ class CasesController < ApplicationController
   def assign_collaborator
     @clinician = Clinician.find(params[:clinician_id])
     @case = @clinician.cases.find(params[:id])
+    if @clinician != current_clinician
+      flash[:warning] = "You cannot access this page"
+      redirect_to clinician_case_path(@clinician, @case)
+    end
     collaborator = Clinician.find(params[:collaborator])
     @case.clinicians << collaborator
     redirect_to add_collaborator_path(@clinician, @case)
   end
   
   def add_collaborator
-    @clinician= Clinician.find(params[:clinician_id])
+    @clinician = Clinician.find(params[:clinician_id])
     @case = @clinician.cases.find(params[:id])
+    if @clinician != current_clinician
+      flash[:warning] = "You cannot access this page"
+      redirect_to clinician_case_path(@clinician, @case)
+    end
     exclude = @case.clinicians.each.map {|a| a.id}
     @clinicians = Clinician.where.not(id: exclude)
   end
