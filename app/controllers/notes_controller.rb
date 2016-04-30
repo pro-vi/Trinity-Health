@@ -58,7 +58,6 @@ class NotesController < ApplicationController
     else
       @add_form = false
     end
-    puts "begin"
     @clinician = Clinician.find(params[:clinician_id])
     @case = Case.find(params[:case_id]) 
     @allowed = @clinician.cases.where(id: @case.id).count > 0
