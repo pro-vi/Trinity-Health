@@ -35,13 +35,9 @@ class CasesController < ApplicationController
     @allowed = @clinician_id == current_clinician.id
     @cases = Clinician.find(@clinician_id).cases
     if params[:search].present?
-      if params[:search].empty?
-        @cases = []
-      else
-        @cases = Case.search(params[:search])
-        if @cases.count == 0
-          @empty_search = true
-        end
+      @cases = Case.search(params[:search])
+      if @cases.count == 0
+        @empty_search = true
       end
     end
   end
@@ -127,8 +123,5 @@ class CasesController < ApplicationController
       redirect_to clinician_cases_path(@clinician_id)
     end
   end
-  
-  def search
 
-  end
 end

@@ -4,16 +4,6 @@ class NotesController < ApplicationController
   end
 
   def new
-    @case_id = params[:case_id].to_i
-    @clinician_id = params[:clinician_id].to_i
-    if @clinician_id != current_clinician.id
-      flash[:warning] = "You cannot create notes for cases you are not a part of"
-      redirect_to clinician_case_notes_path(@clinician_id, @case_id)
-    else
-      @clinician = Clinician.find(params[:clinician_id])
-      @case = @clinician.cases.find(params[:case_id])
-      @note = @case.notes.new
-    end
   end
 
   def edit
