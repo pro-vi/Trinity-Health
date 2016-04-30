@@ -60,8 +60,8 @@ class NotesController < ApplicationController
     end
     puts "begin"
     @clinician = Clinician.find(params[:clinician_id])
-    @allowed = @clinician == current_clinician
-    @case = @clinician.cases.find(params[:case_id]) 
+    @case = Case.find(params[:case_id]) 
+    @allowed = @clinician.cases.where(id: @case.id).count > 0
     @notes = @case.notes
     @note = @notes.new
   end 

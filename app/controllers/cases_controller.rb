@@ -20,7 +20,8 @@ class CasesController < ApplicationController
   
   def add_collaborator
     @clinician = Clinician.find(params[:clinician_id])
-    @case = @clinician.cases.find(params[:id])
+    @case = Case.find(params[:id])
+    @allowed = @clinician.cases.where(id: @case.id).count > 0
     if @clinician != current_clinician
       flash[:warning] = "You cannot access this page"
       redirect_to clinician_case_path(@clinician, @case)
@@ -104,8 +105,8 @@ class CasesController < ApplicationController
     @clinician_id = params[:clinician_id].to_i
     @clinician = Clinician.find(@clinician_id)
     @case_id = params[:id].to_i
-    @allowed = @clinician_id == current_clinician.id
-    @case = @clinician.cases.find(@case_id)
+    @case = Case.find(@case_id)
+    @allowed = @clinician.cases.where(id: @case_id).count > 0
     @attachments = @case.attachments
   end
   

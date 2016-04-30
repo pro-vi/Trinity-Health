@@ -4,7 +4,7 @@
 <p></p>
 <% if @allowed %>
   <p style="text-align:center;"> <a href="#" id="show_form" class="btn btn-xs btn-primary">Add Note</a> </p>
-<% end %>
+
 <div style="text-align:center;" id="add_note_form">
   <%= form_for( [@note], url: {action: "create"},  html:{class: "note_form"}) do |f| %>
     <%= f.label :subject%>
@@ -21,7 +21,7 @@
     <%= f.submit "Create" %>
   <% end %>
 </div>
-
+<% end %>
 <p></p>
 <% @notes.each do |c| %>
   <%if c.id%>

@@ -21,7 +21,7 @@
           <!-- the button used to select as collaborator, see case view -->
           <p></p>
           <div class="clinician-select">
-            <% if @case %>
+            <% if @allowed %>
             <%= link_to "Select as collaborator", assign_collaborator_path(@clinician, @case, c) , { class: "btn btn-sm btn-success" } %>
             <% end %>
           </div>
@@ -46,9 +46,7 @@
           <% end %>
         </ul>
       </div><!-- /.collaborators -->
-      <% if @allowed %>
-        <%= link_to "Add collaborator", add_collaborator_path(@clinician_id, @case.id), class: "btn btn-primary", :id => 'add-collaborator' %>
-      <% end %>
+
     </div>
  </div>
 </div><!-- /.row -->
