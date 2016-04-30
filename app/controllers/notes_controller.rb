@@ -3,9 +3,6 @@ class NotesController < ApplicationController
     params.require(:note).permit(:subject, :note_text)
   end
 
-  def new
-  end
-
   def edit
     @clinician_id = params[:clinician_id].to_i
     @case_id = params[:case_id].to_i
@@ -25,12 +22,17 @@ class NotesController < ApplicationController
     @clinician = Clinician.find(clinician_id)
     @case = @clinician.cases.find(case_id)
     @note = @case.notes.new(note_params)
+    @note.posting_date = DateTime.now
     if @note.save
       flash[:success] = "Note was created successfully"
       redirect_to clinician_case_notes_path(clinician_id, case_id)
     else
       flash[:error] = "Please fill in note"
-      redirect_to new_clinician_case_note_path(clinician_id, case_id)
+      if flash[:form]
+        redirect_to clinician_case_notes_path(clinician_id, case_id)
+      else
+        redirect_to new_clinician_case_note_path(clinician_id, case_id)
+      end
     end 
   end
 
@@ -51,10 +53,17 @@ class NotesController < ApplicationController
   end
 
   def index
+    if flash[:add_form]
+      @add_form = params[:add_form]
+    else
+      @add_form = false
+    end
+    puts "begin"
     @clinician = Clinician.find(params[:clinician_id])
     @allowed = @clinician == current_clinician
     @case = @clinician.cases.find(params[:case_id]) 
     @notes = @case.notes
+    @note = @notes.new
   end 
   
   def destroy
@@ -73,3 +82,4 @@ class NotesController < ApplicationController
     end
   end
 end
+

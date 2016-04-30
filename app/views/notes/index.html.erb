@@ -3,18 +3,48 @@
 <p></p>
 <p></p>
 <% if @allowed %>
-  <%= link_to "Add Note", new_clinician_case_note_path(@clinician, @case), class: "btn btn-xs btn-primary" %>
+  <p style="text-align:center;"> <a href="#" id="show_form" class="btn btn-xs btn-primary">Add Note</a> </p>
 <% end %>
+<div style="text-align:center;" id="add_note_form">
+  <%= form_for( [@note], url: {action: "create"},  html:{class: "note_form"}) do |f| %>
+    <%= f.label :subject%>
+    <%= f.text_field :subject %>
+  
+    <div>
+      <%= f.label :note_text%>
+    </div>
+  
+    <div>
+      <%= f.text_area :note_text, size: "60x12" %>
+    </div>
+    <%flash[:form] = true%>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
+
+<p></p>
 <% @notes.each do |c| %>
+  <%if c.id%>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
       <div class="well well-lg">
+        
         <div class="note-subject">
-          <h4> <%= c.subject %> </h4>
+          <h3> <%= c.subject %> </h3>
         </div>
+
         <div class="note-text">
-          <%= c.note_text%> 
+          <h4> <%= c.note_text%></h4> 
         </div>
+        
+        <div class="note-author">
+          <b> Author: <%= @clinician.name %></b>
+        </div>
+        
+        <div class="note-posting-date">
+          <h6> Date: <%= c.posting_date %>i </h6>
+        </div>
+
         <p></p>
         <% if @allowed %>
           <div class="case-actions">
@@ -24,8 +54,9 @@
                                     class: "btn btn-xs btn-danger" %>
           </div>
         <% end %>
+
       </div>
     </div>
   </div>
-
+  <% end %>
 <% end %>

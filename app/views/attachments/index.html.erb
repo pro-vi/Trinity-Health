@@ -3,6 +3,10 @@
 <p></p>
 <p></p>
 <div class="text-center"><%= tabs(:case_nav) %></div>
+    <br>
+<% if @allowed %>
+<div class = "text-center"><%= link_to "Add Document", edit_clinician_case_path(@clinician, @case), class: "btn btn-md btn-primary"%></div>
+<% end %>
 <div class="thumbnail_body"> 
   <div class="thumbnail_wrapper"> 
     <% if @attachments.count == 0 %>
